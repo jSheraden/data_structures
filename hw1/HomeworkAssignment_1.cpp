@@ -1,18 +1,21 @@
+#include "FloatUnion.hpp"
 #include "HomeworkAssignment_1.hpp"
 
 // Default constructor.
 HomeworkAssignment_1::HomeworkAssignment_1()
 {
+    quit = false;
+    numBits = 0;
+    mask = 0;
 	choice = "";
-	quit = false;
 }
 
 // printChar() - Display the binary representation
 // of a given ASCII character.
 void HomeworkAssignment_1::printChar( char ch )
 {
-    unsigned short numBits = 8;
-    unsigned short mask = pow( 2, numBits - 1 );
+    numBits = 8;
+    mask = pow( 2, numBits - 1 );
 
     std::cout << "\nThe binary representation of '" << ch << "' is: ";
 
@@ -33,8 +36,8 @@ void HomeworkAssignment_1::printChar( char ch )
 // of a given short integer.
 void HomeworkAssignment_1::printShort( short sh )
 {
-    unsigned short numBits = 16;
-    unsigned short mask = pow( 2, numBits - 1 );
+    numBits = 16;
+    mask = pow( 2, numBits - 1 );
 
     std::cout << "\nThe binary representation of " << sh << " is: ";
 
@@ -53,19 +56,19 @@ void HomeworkAssignment_1::printShort( short sh )
 
 // printFloat() - Display the binary representation
 // of a given real value.
-void HomeworkAssignment_1::printFloat( float fl )
+void HomeworkAssignment_1::printFloat( FloatUnion fl )
 {
-    /* unsigned short numBits = 32;
-    float mask = pow( 2, numBits - 1 );
+    /* numBits = 32;
+    mask = pow( 2, numBits - 1 );
 
-    std::cout << std::endl;
+    std::cout << "\nThe binary representaion of " << fl.floatValue << " is: ";
 
     for ( int i = numBits; i > 0; i-- )
     {
         if ( i != numBits && i % 4 == 0 )
             std::cout << " ";
 
-        std::cout << ( ( fl & mask ) != 0 ? 1 : 0 );
+        std::cout << ( ( fl.intValue & mask ) != 0 ? 1 : 0 );
 
         mask >>= 1;
     }
@@ -76,7 +79,7 @@ void HomeworkAssignment_1::printFloat( float fl )
 // displayMenu() - Display the application menu.
 void HomeworkAssignment_1::displayMenu()
 {
-	std::cout << "\nPlease choose an option:\n"
+	std::cout << "\nChoose the data type of the value you wish to enter:\n"
 		<< "\n1. Char"
 		<< "\n2. Short"
 		<< "\n3. Float"
@@ -117,10 +120,10 @@ void HomeworkAssignment_1::getUserInput()
         }
     	else if ( choice == "3" )
         {
-            float userFloat;
+            FloatUnion userFloat;
 
     		std::cout << "\nEnter a float value: ";
-            std::cin  >> userFloat;
+            std::cin  >> userFloat.floatValue;
 
             printFloat( userFloat );
         }
@@ -138,15 +141,13 @@ void HomeworkAssignment_1::getUserInput()
 // entered by the user is valid.
 bool HomeworkAssignment_1::choiceIsValid()
 {
-	if ( choice == "1" || choice == "2" || choice == "3" || choice == "Q" )
-		return true;
-	else
-        return false;
+	return ( choice == "1" || choice == "2" || choice == "3" || choice == "Q" );
 }
 
 // run() - Start the application.
 void HomeworkAssignment_1::run()
 {
+    std::cout << "\nThis program prints the binary representation of a given value.";
 	while ( !quit )
 	{
 		displayMenu();

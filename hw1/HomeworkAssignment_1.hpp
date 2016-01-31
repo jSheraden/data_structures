@@ -4,11 +4,13 @@
 class HomeworkAssignment_1
 {
 	private:
+        bool quit;
 		std::string choice;
-		bool quit;
+        unsigned short numBits;
+        unsigned short mask;
 		void printChar( char ch );
 		void printShort( short sh );
-		void printFloat( float fl );
+		void printFloat( FloatUnion fl );
         void displayMenu();
         void getUserInput();
 		bool choiceIsValid();
