@@ -1,4 +1,4 @@
-#include "HomeworkAssignment_1.h"
+#include "HomeworkAssignment_1.hpp"
 
 // Default constructor.
 HomeworkAssignment_1::HomeworkAssignment_1()
@@ -7,13 +7,14 @@ HomeworkAssignment_1::HomeworkAssignment_1()
 	quit = false;
 }
 
-// printChar()
+// printChar() - Display the binary representation
+// of a given ASCII character.
 void HomeworkAssignment_1::printChar( char ch )
 {
     unsigned short numBits = 8;
-    char mask = pow( 2, numBits - 1 );
+    unsigned short mask = pow( 2, numBits - 1 );
 
-    std::cout << std::endl;
+    std::cout << "\nThe binary representation of '" << ch << "' is: ";
 
     for ( int i = numBits; i > 0; i-- )
     {
@@ -28,13 +29,14 @@ void HomeworkAssignment_1::printChar( char ch )
     std::cout << std::endl;
 }
 
-// printShort()
+// printShort() - Display the binary representation
+// of a given short integer.
 void HomeworkAssignment_1::printShort( short sh )
 {
     unsigned short numBits = 16;
     unsigned short mask = pow( 2, numBits - 1 );
 
-    std::cout << std::endl;
+    std::cout << "\nThe binary representation of " << sh << " is: ";
 
     for ( int i = numBits; i > 0; i-- )
     {
@@ -49,7 +51,8 @@ void HomeworkAssignment_1::printShort( short sh )
     std::cout << std::endl;
 }
 
-// printFloat()
+// printFloat() - Display the binary representation
+// of a given real value.
 void HomeworkAssignment_1::printFloat( float fl )
 {
     /* unsigned short numBits = 32;
@@ -131,8 +134,8 @@ void HomeworkAssignment_1::getUserInput()
 	}
 }
 
-// choiceIsValid() - Determine if the value entered
-// by the user is valid.
+// choiceIsValid() - Determine if the menu selection
+// entered by the user is valid.
 bool HomeworkAssignment_1::choiceIsValid()
 {
 	if ( choice == "1" || choice == "2" || choice == "3" || choice == "Q" )
@@ -141,12 +144,12 @@ bool HomeworkAssignment_1::choiceIsValid()
         return false;
 }
 
-// run() - Run the application.
+// run() - Start the application.
 void HomeworkAssignment_1::run()
 {
 	while ( !quit )
 	{
 		displayMenu();
-		getUserInputs();
+		getUserInput();
 	}
 }

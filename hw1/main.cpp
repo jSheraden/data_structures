@@ -1,3 +1,6 @@
+// Name: Joseph Sheraden
+// Course:
+// Instructor: Bob Comer
 #include <iostream>
 #include <cmath>
 #include <string>
