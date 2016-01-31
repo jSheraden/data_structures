@@ -7,7 +7,7 @@ class HomeworkAssignment_1
 		std::string choice;
 		bool quit;
 		void displayMenu();
-		void getUserInputs();
+		void getUserInput();
 		void printChar( char ch );
 		void printShort( short sh );
 		void printFloat( float fl );

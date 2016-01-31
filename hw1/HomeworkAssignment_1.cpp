@@ -10,12 +10,20 @@ HomeworkAssignment_1::HomeworkAssignment_1()
 // printChar()
 void HomeworkAssignment_1::printChar( char ch )
 {
-    char mask = 0;
+    unsigned short numBits = 8;
+    char mask = pow( 2, numBits - 1 );
 
     std::cout << std::endl;
 
-    for ( int i = 0; i < 8; i++ )
-        std::cout << ( ch != 0 ? 1 : 0 );
+    for ( int i = numBits; i > 0; i-- )
+    {
+        if ( i != numBits && i % 4 == 0 )
+            std::cout << " ";
+
+        std::cout << ( ( ch & mask ) != 0 ? 1 : 0 );
+
+        mask >>= 1;
+    }
 
     std::cout << std::endl;
 }
@@ -23,7 +31,7 @@ void HomeworkAssignment_1::printChar( char ch )
 // printShort()
 void HomeworkAssignment_1::printShort( short sh )
 {
-    unsigned short numBits = 8;
+    unsigned short numBits = 16;
     unsigned short mask = pow( 2, numBits - 1 );
 
     std::cout << std::endl;
@@ -33,7 +41,7 @@ void HomeworkAssignment_1::printShort( short sh )
         if ( i != numBits && i % 4 == 0 )
             std::cout << " ";
 
-        std::cout << ( ( sh & mask ) != 0 ? '1' : '0' );
+        std::cout << ( ( sh & mask ) != 0 ? 1 : 0 );
 
         mask >>= 1;
     }
@@ -44,7 +52,22 @@ void HomeworkAssignment_1::printShort( short sh )
 // printFloat()
 void HomeworkAssignment_1::printFloat( float fl )
 {
+    /* unsigned short numBits = 32;
+    float mask = pow( 2, numBits - 1 );
 
+    std::cout << std::endl;
+
+    for ( int i = numBits; i > 0; i-- )
+    {
+        if ( i != numBits && i % 4 == 0 )
+            std::cout << " ";
+
+        std::cout << ( ( fl & mask ) != 0 ? 1 : 0 );
+
+        mask >>= 1;
+    }
+
+    std::cout << std::endl; */
 }
 
 // displayMenu() - Display the application menu.
@@ -58,9 +81,9 @@ void HomeworkAssignment_1::displayMenu()
 		<< "\n\nEnter your selection: ";
 }
 
-// getUserChoice() - Prompt the user to enter
+// getUserInput() - Prompt the user to enter
 // a select an option from the menu.
-void HomeworkAssignment_1::getUserInputs()
+void HomeworkAssignment_1::getUserInput()
 {
 	std::getline( std::cin, choice );
 	while ( !choiceIsValid() )
