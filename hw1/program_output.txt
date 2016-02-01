@@ -1,0 +1,194 @@
+joey@joey:~/Documents/cpp/data_structures/hw1$ ./hw1
+
+This program prints the binary representation of a given value.
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 3
+
+Enter a float value: -100.3
+
+The binary representation of -100.3 is: 1100 0010 1100 1000 1001 1001 1001 1010
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 3           
+
+Enter a float value: -100.2
+
+The binary representation of -100.2 is: 1100 0010 1100 1000 0110 0110 0110 0110
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 1
+
+Enter a char: d
+
+The binary representation of 'd' is: 0110 0100
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 1
+
+Enter a char: D
+
+The binary representation of 'D' is: 0100 0100
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 1
+
+Enter a char: c
+
+The binary representation of 'c' is: 0110 0011
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 1
+
+Enter a char: C
+
+The binary representation of 'C' is: 0100 0011
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 2
+
+Enter a short integer: 55
+
+The binary representation of 55 is: 0000 0000 0011 0111
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 2
+
+Enter a short integer: 5
+
+The binary representation of 5 is: 0000 0000 0000 0101
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 2
+
+Enter a short integer: 24
+
+The binary representation of 24 is: 0000 0000 0001 1000
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: -24
+
+Enter a valid option: hello
+
+Enter a valid option: q
+
+Enter a valid option: 2
+
+Enter a short integer: -24
+
+The binary representation of -24 is: 1111 1111 1110 1000
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 3
+
+Enter a float value: -24
+
+The binary representation of -24 is: 1100 0001 1100 0000 0000 0000 0000 0000
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 1
+
+Enter a char: u
+
+The binary representation of 'u' is: 0111 0101
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: 4
+
+Enter a valid option: 5
+
+Enter a valid option: 3
+
+Enter a float value: -3.0
+
+The binary representation of -3 is: 1100 0000 0100 0000 0000 0000 0000 0000
+
+Choose the data type of the value you wish to enter:
+
+1. Char
+2. Short
+3. Float
+Q. Quit
+
+Enter your selection: Q
+
+Goodbye...
+
+joey@joey:~/Documents/cpp/data_structures/hw1$
