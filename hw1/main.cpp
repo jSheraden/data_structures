@@ -1,6 +1,9 @@
 // Name: Joseph Sheraden
-// Course:
+// Project Number: 1
+// Project Description: Quadratic Equations
+// Course: Data Structures
 // Instructor: Bob Comer
+// Date: January 31, 2016
 #include <iostream>
 #include <cmath>
 #include <string>
