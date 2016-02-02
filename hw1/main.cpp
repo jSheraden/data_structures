@@ -1,6 +1,6 @@
 // Name: Joseph Sheraden
 // Project Number: 1
-// Project Description: Quadratic Equations
+// Project Description: Binary Representation of Data
 // Course: Data Structures
 // Instructor: Bob Comer
 // Date: January 31, 2016
