@@ -5,13 +5,13 @@
 // Instructor: Bob Comer
 // Date: February 2, 2016
 #include <iostream>
-#include "QuadraticExpressions.cpp"
+#include "Quadratic.cpp"
 
 int main()
 {
-	QuadraticExpressions quadraticExpressions;
+	Quadratic quadratic;
 
-	quadraticExpressions.run()
+	quadratic.run()
 
 	return 0;
 }
