@@ -11,7 +11,7 @@ int main()
 {
 	Quadratic quadratic;
 
-	quadratic.run()
+	quadratic.run();
 
 	return 0;
 }
