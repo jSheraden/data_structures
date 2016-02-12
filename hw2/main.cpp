@@ -6,6 +6,7 @@
 // Date: February 2, 2016
 #include <iostream>
 #include <string>
+#include <cmath>
 #include "Quadratic.cpp"
 
 // Driver program function prototypes.
@@ -16,15 +17,18 @@ int main()
 {
     std::string choice;
 
-    std::cout << "Two quadratics have been created and initialized to default values." << std::endl;
+    std::cout << "\nTwo quadratics have been created and initialized to default values.\n" << std::endl;
 
     do
     {
+        // Display the menu.
         displayMenuOptions();
 
+        // Get menu selection from user.
         std::cout << "\nEnter your choice: ";
         std::getline( std::cin, choice );
 
+        // What does the user want to do?
         if ( choice == "1" )
         {
             // code to display first quadratic
@@ -35,18 +39,20 @@ int main()
         }
         else
         {
-            std::cout << "Not a valid option" << std::endl;
+            std::cout << "\nNot a valid option\n" << std::endl;
         }     
     }
+    // If the user chose option X, quit the program.
     while ( choice != "X" && choice != "x" );
 
+    // Exit the program.
 	return 0;
 }
 
 // displayMenuOptions() - Display the driver program menu.
 void displayMenuOptions()
 {
-    std::cout << "Please choose one of the following:\n"
+    std::cout << "Please choose one of the following:\n\n"
         << "1. Display first quadratic\n"
         << "2. Display second quadratic\n"
         << "3. Modify the coefficients of first quadratic\n"
