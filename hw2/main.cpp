@@ -15,11 +15,12 @@ void displayMenuOptions();
 // The main function.
 int main()
 {
-    std::string choice;
+    std::string choice = "";
 
     std::cout << "\nTwo quadratics have been created and initialized to default values.\n" << std::endl;
 
-    do
+    // If the user chose option X, quit the program.
+    while ( choice != "X" && choice != "x" )
     {
         // Display the menu.
         displayMenuOptions();
@@ -40,10 +41,8 @@ int main()
         else
         {
             std::cout << "\nNot a valid option\n" << std::endl;
-        }     
+        }
     }
-    // If the user chose option X, quit the program.
-    while ( choice != "X" && choice != "x" );
 
     // Exit the program.
 	return 0;
