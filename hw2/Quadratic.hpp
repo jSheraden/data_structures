@@ -2,7 +2,11 @@
 #define QUADRATIC_HPP
 
 class Quadratic
-{ 
+{
+    private:
+        double a;
+        double b;
+        double c;
     public:
         Quadratic();
         void set( double newA, double newB, double newC );
