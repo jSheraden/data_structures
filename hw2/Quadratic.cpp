@@ -17,20 +17,33 @@ void Quadratic::set( double newA, double newB, double newC )
 }
 
 // Quadratic.getA() - Return the value of a.
-double Quadratic::getA()
+double Quadratic::getA() const
 {
     return a;
 }
 
 // Quadratic.getB() - Return the value of b.
-double Quadratic::getB()
+double Quadratic::getB() const
 {
     return b;
 }
 
 // Quadratic.getC() - Return the value of c.
-double Quadratic::getC()
+double Quadratic::getC() const
 {
     return c;
 }
 
+// Overloaded addition operator.
+Quadratic operator+( const Quadratic &q1, const Quadratic &q2 )
+{
+    Quadratic quadratic;
+    
+    double newA = q1.getA() + q2.getA();
+    double newB = q1.getB() + q2.getB();
+    double newC = q1.getC() + q2.getC();
+    
+    quadratic.set( newA, newB, newC );
+    
+    return quadratic;
+}
