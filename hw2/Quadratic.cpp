@@ -34,6 +34,23 @@ double Quadratic::getC() const
     return c;
 }
 
+// Quadratic.display() - Prints the current state of the quadratic object.
+void Quadratic::display() const
+{
+    std::cout << "The quadratic object is "
+        << a << "x^2 + "
+        << b << "x + "
+        << c
+        << std::endl;
+}
+
+// Quadratic.evaluate() - Prints the value of the quadratic object
+// for a given value x.
+double evaluate( double x ) const
+{
+    return pow( a * x, 2 ) + ( b * x ) + c;
+}
+
 // Overloaded addition operator.
 Quadratic operator+( const Quadratic &q1, const Quadratic &q2 )
 {
@@ -42,6 +59,20 @@ Quadratic operator+( const Quadratic &q1, const Quadratic &q2 )
     double newA = q1.getA() + q2.getA();
     double newB = q1.getB() + q2.getB();
     double newC = q1.getC() + q2.getC();
+    
+    quadratic.set( newA, newB, newC );
+    
+    return quadratic;
+}
+
+// Overloaded multiplication operator.
+Quadratic operator*( double r, const Quadratic &q )
+{
+    Quadratic quadratic;
+    
+    double newA = q.getA() * r;
+    double newB = q.getB() * r;
+    double newC = q.getC() * r;
     
     quadratic.set( newA, newB, newC );
     
