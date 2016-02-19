@@ -15,6 +15,7 @@ void displayMenuOptions();
 // The main function.
 int main()
 {
+    Quadratic quadratic;
     std::string choice = "";
 
     std::cout << "\nTwo quadratics have been created and initialized to default values.\n" << std::endl;
