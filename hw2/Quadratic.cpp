@@ -46,7 +46,7 @@ void Quadratic::display() const
 
 // Quadratic.evaluate() - Prints the value of the quadratic object
 // for a given value x.
-double evaluate( double x ) const
+double Quadratic::evaluate( double x ) const
 {
     return pow( a * x, 2 ) + ( b * x ) + c;
 }
