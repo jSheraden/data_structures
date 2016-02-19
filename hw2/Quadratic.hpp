@@ -9,6 +9,7 @@ class Quadratic
         double c;
     public:
         Quadratic();
+        Quadratic( double a, double b, double c );
         void set( double newA, double newB, double newC );
         double getA() const;
         double getB() const;

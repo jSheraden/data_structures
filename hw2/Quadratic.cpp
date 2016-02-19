@@ -8,6 +8,15 @@ Quadratic::Quadratic()
     c = 0;
 }
 
+// An overloaded constructor that sets the values of its
+// parameters to a, b, and c.
+Quadratic::Quadratic( double a, double b, double c )
+{
+    a = a;
+    b = b;
+    c = c;
+}
+
 // Quadratic.set() - Assign new values to a, b, and c.
 void Quadratic::set( double newA, double newB, double newC )
 {
@@ -37,11 +46,7 @@ double Quadratic::getC() const
 // Quadratic.display() - Prints the current state of the quadratic object.
 void Quadratic::display() const
 {
-    std::cout << "The quadratic object is "
-        << a << "x^2 + "
-        << b << "x + "
-        << c
-        << std::endl;
+    std::cout << a << "x^2 + " << b << "x + " << c;
 }
 
 // Quadratic.evaluate() - Prints the value of the quadratic object

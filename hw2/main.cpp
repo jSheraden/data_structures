@@ -11,14 +11,16 @@
 
 // Driver program function prototypes.
 void displayMenuOptions();
+void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 );
 
 // The main function.
 int main()
 {
-    Quadratic quadratic;
+    Quadratic q1;
+    Quadratic q2;
     std::string choice = "";
 
-    std::cout << "\nTwo quadratics have been created and initialized to default values.\n" << std::endl;
+    std::cout << "\nTwo quadratics have been created and initialized to default values." << std::endl;
 
     // If the user chose option X, quit the program.
     while ( choice != "X" && choice != "x" )
@@ -31,18 +33,7 @@ int main()
         std::getline( std::cin, choice );
 
         // What does the user want to do?
-        if ( choice == "1" )
-        {
-            // code to display first quadratic
-        }
-        else if ( choice == "9" )
-        {
-            // code to input a float and display product
-        }
-        else
-        {
-            std::cout << "\nNot a valid option\n" << std::endl;
-        }
+        processMenuSelection( choice, q1, q2 );
     }
 
     // Exit the program.
@@ -52,7 +43,7 @@ int main()
 // displayMenuOptions() - Display the driver program menu.
 void displayMenuOptions()
 {
-    std::cout << "Please choose one of the following:\n\n"
+    std::cout << "\nPlease choose one of the following:\n\n"
         << "1. Display first quadratic\n"
         << "2. Display second quadratic\n"
         << "3. Modify the coefficients of first quadratic\n"
@@ -64,4 +55,46 @@ void displayMenuOptions()
         << "9. Display the product of first quadratic and a given floating-point value\n"
         << "X. Exit"
         << std::endl;
+}
+
+// processMenuSelection() - Display content depending on what the user
+// decides to do.
+void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
+{
+    if ( choice == "1" )
+    {
+        // Display the first quadratic.
+        std::cout << "\nThe first quadratic is ";
+        
+        q1.display();
+        
+        std::cout << std::endl;
+    }
+    else if ( choice == "2" )
+    {
+        // Display the second quadratic.
+        std::cout << "\nThe second quadratic is ";
+        
+        q2.display();
+        
+        std::cout << std::endl;
+    }
+    else if ( choice == "9" )
+    {
+        int userNum = 0;
+        
+        // Prompt the user to enter a number.
+        std::cout << "\nEnter a number: ";
+        std::cin  >> userNum;
+        
+        // Display the evaluated quadratic expression
+        // based on the value the user entered.
+        std::cout << "\nThe evaluated expression is " << q1.evaluate( userNum ) << std::endl;
+        
+        std::cin.ignore();
+    }
+    else
+    {
+        std::cout << "\nNot a valid option\n" << std::endl;
+    }
 }
