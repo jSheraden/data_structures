@@ -61,6 +61,7 @@ void displayMenuOptions()
 // decides to do.
 void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
 {
+    // Option 1.
     if ( choice == "1" )
     {
         // Display the first quadratic.
@@ -70,6 +71,8 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         
         std::cout << std::endl;
     }
+    
+    // Option 2.
     else if ( choice == "2" )
     {
         // Display the second quadratic.
@@ -79,30 +82,44 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         
         std::cout << std::endl;
     }
+    
+    // Option 3.
     else if ( choice == "3" )
     {
         
     }
+    
+    // Option 4.
     else if ( choice == "4" )
     {
         
     }
+    
+    // Option 5.
     else if ( choice == "5" )
     {
         
     }
+    
+    // Option 6.
     else if ( choice == "6" )
     {
         
     }
+    
+    // Option 7.
     else if ( choice == "7" )
     {
         
     }
+    
+    // Option 8.
     else if ( choice == "8" )
     {
         
     }
+    
+    // Option 9.
     else if ( choice == "9" )
     {
         int userNum = 0;
@@ -117,6 +134,8 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         
         std::cin.ignore();
     }
+    
+    // Handle invalid input.
     else
     {
         std::cout << "\nNot a valid option\n" << std::endl;
