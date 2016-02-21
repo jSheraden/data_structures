@@ -148,7 +148,12 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 5.
     else if ( choice == "5" )
     {
-        
+        // Display the coefficients of the first quadratic.
+        std::cout << "\nThe coefficients of the first quadratic are:\n"
+            << "\na = " << q1.getA()
+            << "\nb = " << q1.getB()
+            << "\nc = " << q1.getC()
+            << std::endl;
     }
     
     // Option 6.
