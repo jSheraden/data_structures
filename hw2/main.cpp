@@ -3,7 +3,7 @@
 // Project Description: Quadratic Expressions
 // Course: Data Structures
 // Instructor: Bob Comer
-// Date: February 19, 2016
+// Date: February 21, 2016
 #include <iostream>
 #include <string>
 #include <cmath>
@@ -40,7 +40,7 @@ int main()
 	return 0;
 }
 
-// displayMenuOptions() - Display the driver program menu.
+// displayMenuOptions() - Display the program menu.
 void displayMenuOptions()
 {
     std::cout << "\nPlease choose one of the following:\n\n"
@@ -78,6 +78,30 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         q2.display();
         
         std::cout << std::endl;
+    }
+    else if ( choice == "3" )
+    {
+        
+    }
+    else if ( choice == "4" )
+    {
+        
+    }
+    else if ( choice == "5" )
+    {
+        
+    }
+    else if ( choice == "6" )
+    {
+        
+    }
+    else if ( choice == "7" )
+    {
+        
+    }
+    else if ( choice == "8" )
+    {
+        
     }
     else if ( choice == "9" )
     {
