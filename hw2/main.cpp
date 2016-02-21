@@ -12,6 +12,7 @@
 // Driver program function prototypes.
 void displayMenuOptions();
 void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 );
+double determineRealRoot( Quadratic &q );
 
 // The main function.
 int main()
@@ -63,30 +64,37 @@ void displayMenuOptions()
 // decides to do.
 void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
 {
-    // Option 1.
-    if ( choice == "1" )
+    // Options 1 and 2.
+    if ( choice == "1" || choice == "2" )
     {
-        // Display the first quadratic.
-        std::cout << "\nThe first quadratic is ";
-        
-        q1.display();
+        // Display the selected quadratic.
+        if ( choice == "1" )
+        {
+            std::cout << "\nThe first quadratic is ";
+            q1.display();
+        }
+        else
+        {
+            std::cout << "\nThe second quadratic is ";
+            q2.display();
+        }
         
         std::cout << std::endl;
     }
     
     // Option 2.
-    else if ( choice == "2" )
-    {
-        // Display the second quadratic.
-        std::cout << "\nThe second quadratic is ";
+    // else if ( choice == "2" )
+    // {
+    //     // Display the second quadratic.
+    //     std::cout << "\nThe second quadratic is ";
         
-        q2.display();
+    //     q2.display();
         
-        std::cout << std::endl;
-    }
+    //     std::cout << std::endl;
+    // }
     
-    // Option 3.
-    else if ( choice == "3" )
+    // Options 3 and 4.
+    else if ( choice == "3" || choice == "4" )
     {
         // New values for the coefficients
         // of the first quadratic.
@@ -111,39 +119,46 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         std::getline( std::cin, c );
         double newC = std::stod(c);
         
-        // Set new coefficient values to q1.
-        q1.set( newA, newB, newC );
+        // Set new coefficient values to the selected quadratic.
+        if ( choice == "3" )
+        {
+            q1.set( newA, newB, newC );
+        }
+        else
+        {
+            q2.set( newA, newB, newC );
+        }
     }
     
     // Option 4.
-    else if ( choice == "4" )
-    {
-        // New values for the coefficients
-        // of the first quadratic.
-        std::string a, b, c;
+    // else if ( choice == "4" )
+    // {
+    //     // New values for the coefficients
+    //     // of the first quadratic.
+    //     std::string a, b, c;
         
-        // Prompt the user to enter string values for a, b, and c.
-        // This is to avoid infinite loops if and when the user
-        // enters an invalid input.
+    //     // Prompt the user to enter string values for a, b, and c.
+    //     // This is to avoid infinite loops if and when the user
+    //     // enters an invalid input.
         
-        // Get new value for coefficient a.
-        std::cout << "\nEnter a value for coefficient a: ";
-        std::getline( std::cin, a );
-        double newA = std::stod( a );
+    //     // Get new value for coefficient a.
+    //     std::cout << "\nEnter a value for coefficient a: ";
+    //     std::getline( std::cin, a );
+    //     double newA = std::stod( a );
         
-        // Get new value for coefficient b.
-        std::cout << "Enter a value for coefficient b: ";
-        std::getline( std::cin, b );
-        double newB = std::stod( b );
+    //     // Get new value for coefficient b.
+    //     std::cout << "Enter a value for coefficient b: ";
+    //     std::getline( std::cin, b );
+    //     double newB = std::stod( b );
         
-        // Get new value for coefficient c.
-        std::cout << "Enter a value for coefficient c: ";
-        std::getline( std::cin, c );
-        double newC = std::stod( c );
+    //     // Get new value for coefficient c.
+    //     std::cout << "Enter a value for coefficient c: ";
+    //     std::getline( std::cin, c );
+    //     double newC = std::stod( c );
         
-        // Set new coefficient values to q2.
-        q2.set( newA, newB, newC );
-    }
+    //     // Set new coefficient values to q2.
+    //     q2.set( newA, newB, newC );
+    // }
     
     // Option 5.
     else if ( choice == "5" )
@@ -191,7 +206,7 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     }
     
     // If the user chooses to quit.
-    else if ( choice == "X" || "x" )
+    else if ( choice == "X" || choice == "x" )
     {
         std::cout << "\nGoodbye..." << std::endl;
     }
