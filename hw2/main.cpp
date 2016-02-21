@@ -36,6 +36,8 @@ int main()
         processMenuSelection( choice, q1, q2 );
     }
 
+    std::cout << std::endl;
+    
     // Exit the program.
 	return 0;
 }
@@ -86,13 +88,61 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 3.
     else if ( choice == "3" )
     {
+        // New values for the coefficients
+        // of the first quadratic.
+        std::string a, b, c;
         
+        // Prompt the user to enter string values for a, b, and c.
+        // This is to avoid infinite loops if and when the user
+        // enters an invalid input.
+        
+        // Get new value for coefficient a.
+        std::cout << "\nEnter a value for coefficient a: ";
+        std::getline( std::cin, a );
+        double newA = std::stod(a);
+        
+        // Get new value for coefficient b.
+        std::cout << "Enter a value for coefficient b: ";
+        std::getline( std::cin, b );
+        double newB = std::stod(b);
+        
+        // Get new value for coefficient c.
+        std::cout << "Enter a value for coefficient c: ";
+        std::getline( std::cin, c );
+        double newC = std::stod(c);
+        
+        // Set new coefficient values to q1.
+        q1.set( newA, newB, newC );
     }
     
     // Option 4.
     else if ( choice == "4" )
     {
+        // New values for the coefficients
+        // of the first quadratic.
+        std::string a, b, c;
         
+        // Prompt the user to enter string values for a, b, and c.
+        // This is to avoid infinite loops if and when the user
+        // enters an invalid input.
+        
+        // Get new value for coefficient a.
+        std::cout << "\nEnter a value for coefficient a: ";
+        std::getline( std::cin, a );
+        double newA = std::stod(a);
+        
+        // Get new value for coefficient b.
+        std::cout << "Enter a value for coefficient b: ";
+        std::getline( std::cin, b );
+        double newB = std::stod(b);
+        
+        // Get new value for coefficient c.
+        std::cout << "Enter a value for coefficient c: ";
+        std::getline( std::cin, c );
+        double newC = std::stod(c);
+        
+        // Set new coefficient values to q2.
+        q2.set( newA, newB, newC );
     }
     
     // Option 5.
@@ -138,6 +188,6 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Handle invalid input.
     else
     {
-        std::cout << "\nNot a valid option\n" << std::endl;
+        std::cout << "\nNot a valid option" << std::endl;
     }
 }
