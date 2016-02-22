@@ -102,13 +102,21 @@ int Quadratic::getNumRoots() const
 // Quadratic.getSmallRoot() - Returns the small root of the quadratic.
 double Quadratic::getSmallRoot() const
 {
-    
+    if ( getNumRoots() > 0 )
+    {
+        double smallRoot = ( -b - sqrt( pow( b, 2 ) - 4 * a * c ) ) / ( 2 * a );
+        return smallRoot;
+    }
 }
 
 // Quadratic.getLargeRoot() - Returns the large root of the quadratic.
 double Quadratic::getLargeRoot() const
 {
-    
+    if ( getNumRoots() > 0 )
+    {
+        double largeRoot = ( -b + sqrt( pow( b, 2 ) - 4 * a * c ) ) / ( 2 * a );
+        return largeRoot;
+    }
 }
 
 // Overloaded addition operator.
