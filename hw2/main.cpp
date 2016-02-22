@@ -204,17 +204,22 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 9.
     else if ( choice == "9" )
     {
-        int userNum = 0;
+        std::string temp;
         
         // Prompt the user to enter a number.
         std::cout << "\nEnter a number: ";
-        std::cin  >> userNum;
+        std::getline( std::cin, temp );
+        double userNum = std::stod( temp );
         
-        // Display the evaluated quadratic expression
-        // based on the value the user entered.
-        std::cout << "\nThe evaluated expression is " << q1.evaluate( userNum ) << std::endl;
+        Quadratic product = userNum * q1;
         
-        std::cin.ignore();
+        // Display the product of the first quadratic and 
+        // the number that the user has entered.
+        std::cout << "\nThe product of " << userNum << " and the first quadratic is: ";
+        
+        product.display();
+        
+        std::cout << std::endl;
     }
     
     // If the user chooses to quit.
