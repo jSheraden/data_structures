@@ -12,7 +12,6 @@
 // Driver program function prototypes.
 void displayMenuOptions();
 void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 );
-double determineRealRoot( Quadratic &q );
 
 // The main function.
 int main()
