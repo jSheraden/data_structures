@@ -107,17 +107,17 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
         // Get new value for coefficient a.
         std::cout << "\nEnter a value for coefficient a: ";
         std::getline( std::cin, a );
-        double newA = std::stod(a);
+        double newA = std::stod( a );
         
         // Get new value for coefficient b.
         std::cout << "Enter a value for coefficient b: ";
         std::getline( std::cin, b );
-        double newB = std::stod(b);
+        double newB = std::stod( b );
         
         // Get new value for coefficient c.
         std::cout << "Enter a value for coefficient c: ";
         std::getline( std::cin, c );
-        double newC = std::stod(c);
+        double newC = std::stod( c );
         
         // Set new coefficient values to the selected quadratic.
         if ( choice == "3" )
@@ -174,7 +174,19 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 6.
     else if ( choice == "6" )
     {
+        std::string temp;
         
+        // Prompt the user to enter a value.
+        std::cout << "\nEnter a value for x: ";
+        std::getline( std::cin, temp );
+        double x = std::stod( temp );
+        
+        // Display the value of the first quadratic.
+        std::cout << "\nThe value of the first quadratic when x is equal to "
+            << x 
+            << " is "
+            << q1.evaluate( x )
+            << std::endl;
     }
     
     // Option 7.

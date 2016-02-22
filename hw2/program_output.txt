@@ -1,0 +1,79 @@
+jsheraden:~/workspace/cpp/data_structures/hw2 (master) $ ./bin/hw2
+
+Two quadratics have been created and initialized to default values.
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 6
+
+Enter a value for x: 2.3
+
+The value of the first quadratic when x is equal to 2.3 is 0
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: 2.3
+Enter a value for coefficient b: 4.2
+Enter a value for coefficient c: 5.5
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 6
+
+Enter a value for x: 3.4
+
+The value of the first quadratic when x is equal to 3.4 is 80.9324
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: x
+
+Goodbye...
+
+jsheraden:~/workspace/cpp/data_structures/hw2 (master) $ 

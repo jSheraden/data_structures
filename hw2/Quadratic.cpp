@@ -56,6 +56,24 @@ double Quadratic::evaluate( double x ) const
     return pow( a * x, 2 ) + ( b * x ) + c;
 }
 
+// Quadratic.getNumRoots() - Returns the quadratic's number of roots.
+int Quadratic::getNumRoots() const
+{
+    
+}
+
+// Quadratic.getSmallRoot() - Returns the small root of the quadratic.
+double Quadratic::getSmallRoot() const
+{
+    
+}
+
+// Quadratic.getLargeRoot() - Returns the large root of the quadratic.
+double Quadratic::getLargeRoot() const
+{
+    
+}
+
 // Overloaded addition operator.
 Quadratic operator+( const Quadratic &q1, const Quadratic &q2 )
 {
