@@ -59,7 +59,44 @@ double Quadratic::evaluate( double x ) const
 // Quadratic.getNumRoots() - Returns the quadratic's number of roots.
 int Quadratic::getNumRoots() const
 {
+    // If a, b, and c are all 0, the quadratic has 2 real roots.
+    if ( a == 0 && b == 0 && c == 0 )
+    {
+        return 2;
+    }
     
+    // If a and b are zero and c is non-zero, the quadratic has no real roots.
+    else if ( a == 0 && b == 0 && c != 0 )
+    {
+        return 0;
+    }
+    
+    // If a is zero and b is non-zero, the quadratic has only 1 real root.
+    else if ( a == 0 && b != 0 )
+    {
+        return 1;
+    }
+    
+    // If a is non-zero and b squared is less than 4ac,
+    // the quadratic has no real roots.
+    else if ( a != 0 && pow( b, 2 ) < 4 * a * c )
+    {
+        return 0;
+    }
+
+    // If a is non-zero and b squared is equal to 4ac,
+    // the quadratic has only 1 real root.
+    else if ( a != 0 && pow( b, 2 ) == 4 * a * c )
+    {
+        return 1;
+    }
+
+    // If a is non-zero and b squared is greater than 4ac,
+    // the quadratic has 2 real roots.
+    else if ( a != 0 && pow( b, 2 ) > 4 * a * c )
+    {
+        return 2;
+    }
 }
 
 // Quadratic.getSmallRoot() - Returns the small root of the quadratic.
