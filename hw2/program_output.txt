@@ -1,0 +1,585 @@
+jsheraden:~/workspace/cpp/data_structures/hw2 (master) $ ./bin/hw2
+
+Two quadratics have been created and initialized to default values.
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 1
+
+The first quadratic is 0x^2 + 0x + 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 2
+
+The second quadratic is 0x^2 + 0x + 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: 3
+Enter a value for coefficient b: 2
+Enter a value for coefficient c: 1
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 1
+
+The first quadratic is 3x^2 + 2x + 1
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 2
+
+The second quadratic is 0x^2 + 0x + 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 4
+
+Enter a value for coefficient a: -6
+Enter a value for coefficient b: -5
+Enter a value for coefficient c: -4
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 2
+
+The second quadratic is -6x^2 + -5x + -4
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 5
+
+The coefficients of the first quadratic are:
+
+a = 3
+b = 2
+c = 1
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 6
+
+Enter a value for x: 4.4
+
+The value of the first quadratic when x is equal to 4.4 is 184.04
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 7
+
+First quadratic:
+
+Number of roots: 0
+Small root: 0
+Large root: 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 8
+
+The sum of the first and second quadratics is -3x^2 + -3x + -3
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 9
+
+Enter a number: 3.2
+
+The product of 3.2 and the first quadratic is: 9.6x^2 + 6.4x + 3.2
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: X
+
+Goodbye...
+
+jsheraden:~/workspace/cpp/data_structures/hw2 (master) $ ./bin/hw2
+
+Two quadratics have been created and initialized to default values.
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 1
+
+The first quadratic is 0x^2 + 0x + 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 2
+
+The second quadratic is 0x^2 + 0x + 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: -4.5
+Enter a value for coefficient b: -3.64
+Enter a value for coefficient c: -12.3
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 6
+
+Enter a value for x: 3.23
+
+The value of the first quadratic when x is equal to 3.23 is 187.209
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 7
+
+First quadratic:
+
+Number of roots: 0
+Small root: 0
+Large root: 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 4
+
+Enter a value for coefficient a: 3.21
+Enter a value for coefficient b: -64.3
+Enter a value for coefficient c: -21.3
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 2
+
+The second quadratic is 3.21x^2 + -64.3x + -21.3
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 8
+
+The sum of the first and second quadratics is -1.29x^2 + -67.94x + -33.6
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: 43.34
+Enter a value for coefficient b: -28.43
+Enter a value for coefficient c: 6.2
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 7
+
+First quadratic:
+
+Number of roots: 0
+Small root: 0
+Large root: 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: 1.2
+Enter a value for coefficient b: 7.5
+Enter a value for coefficient c: 1.43
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 7
+
+First quadratic:
+
+Number of roots: 2
+Small root: -6.05313
+Large root: -0.196868
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 3
+
+Enter a value for coefficient a: -43.2
+Enter a value for coefficient b: -1.0
+Enter a value for coefficient c: -32.56
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: 7
+
+First quadratic:
+
+Number of roots: 0
+Small root: 0
+Large root: 0
+
+-------------------------
+
+Please choose one of the following:
+
+1. Display first quadratic
+2. Display second quadratic
+3. Modify the coefficients of first quadratic
+4. Modify the coefficients of second quadratic
+5. Display the coefficients of first quadratic
+6. Evaluate the first quadratic at a given value of x
+7. Display the number of roots, smallest root and largest root for first quadratic
+8. Display the sum of first and second quadratic
+9. Display the product of first quadratic and a given floating-point value
+X. Exit
+
+Enter your choice: x
+
+Goodbye...
+
+jsheraden:~/workspace/cpp/data_structures/hw2 (master) $ 

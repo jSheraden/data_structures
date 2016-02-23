@@ -3,7 +3,7 @@
 // Project Description: Quadratic Expressions
 // Course: Data Structures
 // Instructor: Bob Comer
-// Date: February 22, 2016
+// Date: February 23, 2016
 #include <iostream>
 #include <string>
 #include <cmath>
