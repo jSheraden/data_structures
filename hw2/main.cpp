@@ -25,6 +25,8 @@ int main()
     // If the user chose option X, quit the program.
     while ( choice != "X" && choice != "x" )
     {
+        std::cout << "\n-------------------------\n";
+        
         // Display the menu.
         displayMenuOptions();
 
@@ -191,7 +193,11 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 7.
     else if ( choice == "7" )
     {
-        
+        std::cout << "\nFirst quadratic:\n"
+            << "\nNumber of roots: " << q1.getNumRoots()
+            << "\nSmall root: " << q1.getSmallRoot()
+            << "\nLarge root: " << q1.getLargeRoot()
+            << std::endl;
     }
     
     // Option 8.
