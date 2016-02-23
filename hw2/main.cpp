@@ -203,7 +203,14 @@ void processMenuSelection( std::string &choice, Quadratic &q1, Quadratic &q2 )
     // Option 8.
     else if ( choice == "8" )
     {
+        Quadratic sum = q1 + q2;
         
+        // Display the sum of the first and second quadratics.
+        std::cout << "\nThe sum of the first and second quadratics is ";
+        
+        sum.display();
+        
+        std::cout << std::endl;
     }
     
     // Option 9.
