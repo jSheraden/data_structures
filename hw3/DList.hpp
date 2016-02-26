@@ -15,6 +15,8 @@ class DList
         void insert( ElementType item, int pos );
         void erase( int pos );
         void display( std::ostream &out ) const;
+        int getSize() const;
+        int getCapacity() const;
 };
 
 #endif
