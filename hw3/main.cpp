@@ -5,10 +5,12 @@
 // Instructor: Bob Comer
 // Date: February 23, 2016
 #include <iostream>
+#include <cassert>
 #include "DList.cpp"
 
 int main()
 {
-    std::cout << "Testing..." << std::endl;
+    DList dList;
+    
     return 0;
 }
