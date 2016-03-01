@@ -1,9 +1,6 @@
-#ifndef DRIVER_FUNCTIONS_CPP
-#define DRIVER_FUNCTIONS_CPP
+#include "driver_functions.hpp"
 
 void displayMenuOptions( DList &dList )
 {
 
 }
-
-#endif
