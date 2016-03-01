@@ -13,7 +13,7 @@ DList::DList( int maxSize ) : mySize( 0 ), myCapacity( maxSize )
 }
 
 // DList.empty() - Empty the dynamic array.
-bool DList::empty()
+bool DList::empty() const
 {
     
 }
@@ -31,19 +31,19 @@ void DList::erase( int pos )
 }
 
 // DList.display() - Display the dynamic array.
-void DList::display( std::ostream &out )
+void DList::display( std::ostream &out ) const
 {
     
 }
 
 // DList.getSize() - Get the current size of the dynamic array.
-int DList::getSize()
+int DList::getSize() const
 {
     
 }
 
 // DList.getCapacity() - Get the capacity of the dynamic array.
-int DList::getCapacity()
+int DList::getCapacity() const
 {
     
 }
