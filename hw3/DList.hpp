@@ -8,9 +8,11 @@ class DList
 {
     private:
         int mySize;
-        ElementType myArray[CAPACITY];
+        int myCapacity;
+        ElementType *myArray[CAPACITY];
     public:
         DList();
+        DList( int maxSize );
         bool empty() const;
         void insert( ElementType item, int pos );
         void erase( int pos );
@@ -18,5 +20,7 @@ class DList
         int getSize() const;
         int getCapacity() const;
 };
+
+std::ostream &operator<<( std::ostream &out, const DList &aList );
 
 #endif

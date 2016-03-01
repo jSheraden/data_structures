@@ -10,7 +10,7 @@
 
 int main()
 {
-    DList dList;
+    DList dList( 5 );
     
     return 0;
 }
