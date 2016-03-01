@@ -11,20 +11,24 @@
 
 int main()
 {
-    DList dList( 5 );
-    char userChoice = '\0';
+    DList dList( 5 );         // Declare an object of class DList.
+    char userChoice = '\0';   // Stores menu selections entered by the user.
     
-    while ( toupper( userChoice ) != 'X' )
+    // Driver program loop.
+    while ( toupper( userChoice ) != 'Q' )
     {
+        // Display the program menu.
         displayMenuOptions( dList );
         
+        // Get menu selection from the user.
         std::cout << "Enter your choice: ";
         std::cin  >> userChoice;
         
+        // Decide what to do based on the user's input.
         processMenuSelection( userChoice );
     }
     
     std::cout << std::endl;
     
-    return 0;
+    return 0;   // Exit the program.
 }
