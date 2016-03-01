@@ -6,6 +6,7 @@ DList::DList() : mySize( 0 ), myCapacity( 0 )
     std::cout << "Testing..." << std::endl;
 }
 
+<<<<<<< HEAD
 // Overloaded constructor.
 DList::DList( int maxSize ) : mySize( 0 ), myCapacity( maxSize )
 {
@@ -52,4 +53,40 @@ int DList::getCapacity()
 std::ostream &operator<<( std::ostream &out, const DList &aList )
 {
     
+=======
+// DList.empty()
+bool DList::empty() const
+{
+
+}
+
+// DList.insert()
+void DList::insert( ElementType item, int pos )
+{
+
+}
+
+// DList.erase()
+void DList::erase( int pos )
+{
+
+}
+
+// DList.display()
+void DList::display( std::ostream &out ) const
+{
+
+}
+
+// DList.getSize()
+int DList::getSize() const
+{
+
+}
+
+// DList.getCapacity()
+int DList::getCapacity() const
+{
+
+>>>>>>> 6370c401910c9680aad8685cdefea9b9909a564b
 }
