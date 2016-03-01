@@ -15,7 +15,7 @@ int main()
     char userChoice = '\0';   // Stores menu selections entered by the user.
     
     // Driver program loop.
-    while ( toupper( userChoice ) != 'Q' )
+    while ( userChoice != 'Q' )
     {
         // Display the program menu.
         displayMenuOptions( dList );
@@ -23,6 +23,9 @@ int main()
         // Get menu selection from the user.
         std::cout << "Enter your choice: ";
         std::cin  >> userChoice;
+        
+        // Convert user input to uppercase.
+        userChoice = toupper( userChoice );
         
         // Decide what to do based on the user's input.
         processMenuSelection( userChoice );
