@@ -44,6 +44,35 @@ DList::~DList()
     delete[] myArray;
 }
 
+const DList &DList::operator=( const DList &rightHandSide )
+{
+    if ( this != &rightHandSide )
+    {
+        // Allocate a new array if necessary.
+        if ( myCapacity != rightHandSide.myCapacity )
+        {
+            delete[] myArray;
+            myCapacity = rightHandSide.myCapacity;
+            myArray = new( std::nothrow ) ElementType[myCapacity];
+            
+            if ( myArray == 0 )
+            {
+                std::cerr << "*** Inadequate memory to allocate stack ***\n";
+                exit( 1 );
+            }
+        }
+        
+        // Copy rightHandSide's list elements into this new array.
+        mySize = rightHandSide.mySize;
+        for ( int i = 0; i < mySize; i++ )
+        {
+            myArray[i] = rightHandSize.myArray[i];
+        }
+    }
+    
+    return *this;
+}
+
 // DList.empty() - Empty the dynamic array.
 bool DList::empty() const
 {

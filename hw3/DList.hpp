@@ -14,6 +14,7 @@ class DList
         DList( int maxSize = 1024 );
         DList( const DList &origList );
         ~DList();
+        const DList &operator=( const DList &rightHandSide );
         bool empty() const;
         void insert( ElementType item, int pos );
         void erase( int pos );
@@ -23,5 +24,4 @@ class DList
 };
 
 std::ostream &operator<<( std::ostream &out, const DList &aList );
-
 #endif
