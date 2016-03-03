@@ -73,10 +73,10 @@ const DList &DList::operator=( const DList &rightHandSide )
     return *this;
 }
 
-// DList.empty() - Empty the dynamic array.
+// DList.empty() - Check if the dynamic array is empty.
 bool DList::empty() const
 {
-    
+    return mySize == 0;
 }
 
 // DList.insert() - Insert an element into the dynamic array.
@@ -110,12 +110,14 @@ void DList::insert( ElementType item, int pos )
 // DList.erase() - Remove an element from the dynamic array.
 void DList::erase( int pos )
 {
+    // If the list is empty, display an error message and return.
     if ( mySize == 0 )
     {
         std::cerr << "*** List is empty ***\n";
         return;
     }
     
+    // If pos is out of bounds, display an error message and return.
     if ( pos < 0 || pos >= mySize )
     {
         std::cerr << "*** Illegal location to delete -- " << pos << ". List unchanged ***\n";
