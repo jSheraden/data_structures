@@ -82,19 +82,63 @@ bool DList::empty() const
 // DList.insert() - Insert an element into the dynamic array.
 void DList::insert( ElementType item, int pos )
 {
+    // If the array has reach max capacity, terminate the program.
+    if ( mySize == 1024 )
+    {
+        std::cerr << "*** No space for this list element -- terminating execution ***\n";
+        exit( 1 );
+    }
     
+    // If item position is out of bounds, return an error message.
+    if ( pos < 0 || pos > mySize )
+    {
+        std::cerr << "*** Illegal location to insert -- " << pos << ". List unchanged ***\n";
+        return;
+    }
+    
+    // First shift array elements right to make room for item.
+    for ( int i = mySize; i > pos; i-- )
+    {
+        myArray[i] = myArray[i - 1];
+    }
+    
+    // Now insert item at position pos and increase list size.
+    myArray[pos] = item;
+    mySize++;
 }
 
 // DList.erase() - Remove an element from the dynamic array.
 void DList::erase( int pos )
 {
+    if ( mySize == 0 )
+    {
+        std::cerr << "*** List is empty ***\n";
+        return;
+    }
     
+    if ( pos < 0 || pos >= mySize )
+    {
+        std::cerr << "*** Illegal location to delete -- " << pos << ". List unchanged ***\n";
+        return;
+    }
+    
+    // Shift array elements left to close the gap.
+    for ( int i = pos; i < mySize; i++ )
+    {
+        myArray[i] = myArray[i + 1];
+    }
+    
+    // Decrease list size.
+    mySize--;
 }
 
 // DList.display() - Display the dynamic array.
 void DList::display( std::ostream &out ) const
 {
-    
+    for ( int i = 0; i < mySize; i++ )
+    {
+        out << myArray[i] << " ";
+    }
 }
 
 // DList.getSize() - Get the current size of the dynamic array.
