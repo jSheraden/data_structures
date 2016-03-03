@@ -146,13 +146,13 @@ void DList::display( std::ostream &out ) const
 // DList.getSize() - Get the current size of the dynamic array.
 int DList::getSize() const
 {
-    
+    return mySize;
 }
 
 // DList.getCapacity() - Get the capacity of the dynamic array.
 int DList::getCapacity() const
 {
-    
+    return myCapacity;
 }
 
 // Overloaded << operator.
