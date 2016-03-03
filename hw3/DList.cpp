@@ -44,6 +44,7 @@ DList::~DList()
     delete[] myArray;
 }
 
+// Overloaded = operator for DList.
 const DList &DList::operator=( const DList &rightHandSide )
 {
     if ( this != &rightHandSide )
@@ -140,6 +141,21 @@ void DList::display( std::ostream &out ) const
     for ( int i = 0; i < mySize; i++ )
     {
         out << myArray[i] << " ";
+    }
+}
+
+// DList.setCapacity() - Set a new upper limit to the number of
+// list items the dynamic array can hold.
+void DList::setCapacity( int newCapacity )
+{
+    if ( newCapacity > myCapacity )
+    {
+        myCapacity = newCapacity;
+        std::cout << "\nA new capacity has been set to the dynamic array." << std::endl;
+    }
+    else
+    {
+        std::cerr << "\n*** New capacity must be higher than previous capacity ***\n";
     }
 }
 

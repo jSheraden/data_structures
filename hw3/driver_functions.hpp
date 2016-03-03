@@ -3,6 +3,6 @@
 
 // Driver function prototypes.
 void displayMenuOptions( DList &dList );
-void processMenuSelection( char &choice );
+void processMenuSelection( char &choice, DList &dList );
 
 #endif

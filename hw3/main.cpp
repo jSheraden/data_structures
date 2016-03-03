@@ -28,7 +28,7 @@ int main()
         userChoice = toupper( userChoice );
         
         // Decide what to do based on the user's input.
-        processMenuSelection( userChoice );
+        processMenuSelection( userChoice, dList );
     }
     
     std::cout << std::endl;
