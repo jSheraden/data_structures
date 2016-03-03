@@ -66,7 +66,7 @@ const DList &DList::operator=( const DList &rightHandSide )
         mySize = rightHandSide.mySize;
         for ( int i = 0; i < mySize; i++ )
         {
-            myArray[i] = rightHandSize.myArray[i];
+            myArray[i] = rightHandSide.myArray[i];
         }
     }
     
@@ -112,5 +112,6 @@ int DList::getCapacity() const
 // Overloaded << operator.
 std::ostream &operator<<( std::ostream &out, const DList &aList )
 {
-    
+    aList.display( out );
+    return out;
 }
