@@ -1,7 +1,6 @@
 #ifndef DLIST_HPP
 #define DLIST_HPP
 
-const int CAPACITY = 1024;
 typedef int ElementType;
 
 class DList
@@ -9,10 +8,12 @@ class DList
     private:
         int mySize;
         int myCapacity;
-        ElementType *myArray[CAPACITY];
+        ElementType *myArray;
     public:
         DList();
-        DList( int maxSize );
+        DList( int maxSize = 1024 );
+        DList( const DList &origList );
+        ~DList();
         bool empty() const;
         void insert( ElementType item, int pos );
         void erase( int pos );

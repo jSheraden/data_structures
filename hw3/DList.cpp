@@ -3,13 +3,45 @@
 // Default constructor.
 DList::DList() : mySize( 0 ), myCapacity( 0 )
 {
-    std::cout << "Testing..." << std::endl;
+    myArray = new( std::nothrow ) ElementType;
+    assert( myArray != 0 );
 }
 
 // Overloaded constructor.
 DList::DList( int maxSize ) : mySize( 0 ), myCapacity( maxSize )
 {
+    myArray = new( std::nothrow ) ElementType[maxSize];
+    assert( myArray != 0 );
+}
+
+// Second overloaded constructor.
+DList::DList( const DList &origList )
+: mySize( origList.mySize ), myCapacity( origList.myCapacity )
+{
+    myArray = new( std::nothrow ) ElementType[myCapacity];
+
+    // If myArray is not empty, assign the elements of
+    // origList to this list.
+    if ( myArray != 0 )
+    {
+        for ( int i = 0; i < mySize; i++ )
+        {
+            myArray[i] = origList.myArray[i];
+        }
+    }
     
+    // If not, return an error message.
+    else
+    {
+        std::cerr << "*** Inadequate memory to allocate storage for list ***\n";
+        exit( 1 );
+    }
+}
+
+// DList class destructor.
+DList::~DList()
+{
+    delete[] myArray;
 }
 
 // DList.empty() - Empty the dynamic array.

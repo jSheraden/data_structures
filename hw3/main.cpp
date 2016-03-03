@@ -21,7 +21,7 @@ int main()
         displayMenuOptions( dList );
         
         // Get menu selection from the user.
-        std::cout << "Enter your choice: ";
+        std::cout << "\n\nEnter your choice: ";
         std::cin  >> userChoice;
         
         // Convert user input to uppercase.
