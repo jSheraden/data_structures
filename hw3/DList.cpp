@@ -33,7 +33,7 @@ DList::DList( const DList &origList )
     // If not, return an error message.
     else
     {
-        std::cerr << "*** Inadequate memory to allocate storage for list ***\n";
+        std::cerr << "\n*** Inadequate memory to allocate storage for list ***\n";
         exit( 1 );
     }
 }
@@ -58,7 +58,7 @@ const DList &DList::operator=( const DList &rightHandSide )
             
             if ( myArray == 0 )
             {
-                std::cerr << "*** Inadequate memory to allocate stack ***\n";
+                std::cerr << "\n*** Inadequate memory to allocate stack ***\n";
                 exit( 1 );
             }
         }
@@ -86,14 +86,14 @@ void DList::insert( ElementType item, int pos )
     // If the array has reach max capacity, terminate the program.
     if ( mySize == 1024 )
     {
-        std::cerr << "*** No space for this list element -- terminating execution ***\n";
+        std::cerr << "\n*** No space for this list element -- terminating execution ***\n";
         exit( 1 );
     }
     
     // If item position is out of bounds, return an error message.
     if ( pos < 0 || pos > mySize )
     {
-        std::cerr << "*** Illegal location to insert -- " << pos << ". List unchanged ***\n";
+        std::cerr << "\n*** Illegal location to insert -- " << pos << ". List unchanged ***\n";
         return;
     }
     

@@ -29,6 +29,34 @@ void processMenuSelection( char &choice, DList &dList )
     {
         // Option A - Insert a list of items into the array.
         case 'A':
+            {
+                std::cin.ignore();
+                
+                std::string newItems;
+                std::string temp = "";
+                int size;
+                
+                // Prompt the user to enter several integers on one line.
+                std::cout << "Enter one or more values to be inserted into the list (separated by spaces): ";
+                std::getline( std::cin, newItems );
+                
+                // Break the string into multiple values and insert them
+                // into the array.
+                size = newItems.size();
+                for ( int i = 0; i < size + 1; i++ )
+                {
+                    if ( newItems[i] != ' ' && i < size )
+                    {
+                        temp += newItems[i];
+                    }
+                    else
+                    {
+                        dList.insert( std::stoi( temp ), dList.getSize() );
+                        temp = "";
+                    }
+                }
+                
+            }
             break;
             
         // Option C - Set a new array capacity to the list.
@@ -57,6 +85,21 @@ void processMenuSelection( char &choice, DList &dList )
             
         // Option I - Insert a new item into the array.
         case 'I':
+            {
+                ElementType newItem;
+                int newItemPos;
+                
+                // Prompt the user to enter a value for a new list item.
+                std::cout << "Enter an integer for a new list item: ";
+                std::cin  >> newItem;
+                
+                // Now get a value for the new item's position.
+                std::cout << "Where in the array should this new item be? ";
+                std::cin  >> newItemPos;
+                
+                // Set the user's input as a new item in the array.
+                dList.insert( newItem, newItemPos );
+            }
             break;
             
         // Option R - Remove an item from the array.
