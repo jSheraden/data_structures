@@ -104,6 +104,17 @@ void processMenuSelection( char &choice, DList &dList )
             
         // Option R - Remove an item from the array.
         case 'R':
+            {
+                int itemPos;
+                
+                // Prompt the user to enter the position of the item to
+                // be erased.
+                std::cout << "Enter the position in the list of the item to be erased: ";
+                std::cin  >> itemPos;
+                
+                // Remove the item from the array.
+                dList.erase( itemPos );
+            }
             break;
     }
 }
