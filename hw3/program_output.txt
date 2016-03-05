@@ -1,0 +1,152 @@
+jsheraden:~/workspace/cpp/data_structures/hw3 (master) $ ./bin/hw3
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: a
+
+Enter one or more values to be inserted into the list (separated by spaces): 5 3 2
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: c
+
+Enter a new capacity for the array: 10
+
+A new capacity has been set to the dynamic array.
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: c
+
+Enter a new capacity for the array: 0
+
+*** New capacity must be higher than previous capacity ***
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: e
+
+0
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: p
+
+5 3 2 
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: i
+
+Enter an integer for a new list item: 5
+Where in the array should this new item be? 7
+
+*** Illegal location to insert -- 7. List unchanged ***
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: r
+
+Enter the position in the list of the item to be erased: 2
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: p
+
+5 3 
+
+-------------------------
+
+The following choices are available:
+
+A. Add a number of random integers to end of list
+C. Change the capacity of the list using the setCapacity function
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new number with the insert(...) function
+R. Remove a number with the erase() function
+Q. Quit this test program
+
+Enter your choice: q
+
+jsheraden:~/workspace/cpp/data_structures/hw3 (master) $ 

@@ -81,6 +81,7 @@ void processMenuSelection( char &choice, DList &dList )
         // Option P - Print the dynamic array.
         case 'P':
             dList.display( std::cout );
+            std::cout << std::endl;
             break;
             
         // Option I - Insert a new item into the array.
