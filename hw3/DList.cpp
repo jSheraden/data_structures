@@ -106,6 +106,10 @@ void DList::insert( ElementType item, int pos )
     // Now insert item at position pos and increase list size.
     myArray[pos] = item;
     mySize++;
+    
+    std::cout << "\nA new item with value " << item
+        << " has been added at position " << pos
+        << "." << std::endl;
 }
 
 // DList.erase() - Remove an element from the dynamic array.
@@ -133,6 +137,8 @@ void DList::erase( int pos )
     
     // Decrease list size.
     mySize--;
+    
+    std::cout << "\nThe item at position " << pos << " has been deleted." << std::endl;
 }
 
 // DList.display() - Display the dynamic array.
