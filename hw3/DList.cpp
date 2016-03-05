@@ -118,14 +118,14 @@ void DList::erase( int pos )
     // If the list is empty, display an error message and return.
     if ( mySize == 0 )
     {
-        std::cerr << "*** List is empty ***\n";
+        std::cerr << "\n*** List is empty ***\n";
         return;
     }
     
     // If pos is out of bounds, display an error message and return.
     if ( pos < 0 || pos >= mySize )
     {
-        std::cerr << "*** Illegal location to delete -- " << pos << ". List unchanged ***\n";
+        std::cerr << "\n*** Illegal location to delete -- " << pos << ". List unchanged ***\n";
         return;
     }
     
