@@ -11,6 +11,7 @@
 
 int main()
 {
+    /*
     DList dList( 5 );         // Declare an object of class DList.
     char userChoice = '\0';   // Stores menu selections entered by the user.
     
@@ -32,6 +33,9 @@ int main()
     }
     
     std::cout << std::endl;
+    */
+    
+    std::cout << "Success!" << std::endl;
     
     return 0;   // Exit the program.
 }

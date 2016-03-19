@@ -14,7 +14,7 @@ class DList
                 
                 Node();
                 Node( ElementType initData );
-        }
+        };
         
         typedef Node * NodePointer;
         
@@ -25,12 +25,11 @@ class DList
         DList( const DList &source );
         ~DList();
         const DList &operator=( const DList &rightHandSide );
-        int find( ElementType item );
+        int find( ElementType value ) const;
         bool empty() const;
         void insert( ElementType item, int pos );
         void erase( int pos );
         void display( std::ostream &out ) const;
-        void setCapacity( int newCapacity );
         int getSize() const;
 };
 

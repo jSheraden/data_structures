@@ -58,21 +58,7 @@ void processMenuSelection( char &choice, DList &dList )
                 
             }
             break;
-            
-        // Option C - Set a new array capacity to the list.
-        case 'C':
-            {
-                int newCap;
-                
-                // Prompt the user to enter a value.
-                std::cout << "Enter a new capacity for the array: ";
-                std::cin  >> newCap;
-                
-                // Set the user's input as the new array capacity.
-                dList.setCapacity( newCap );
-            }
-            break;
-            
+        
         // Option E - Determine if the array is empty or not.
         case 'E':
             std::cout << dList.empty() << std::endl;
