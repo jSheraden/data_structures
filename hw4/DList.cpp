@@ -14,7 +14,7 @@ DList::DList( const DList &source )
     this = source;
 }
 
-// The destructor deletes the dynamically allocated array.
+// The destructor deletes all nodes in the linked list.
 DList::~DList()
 {
     delete[] first;
@@ -32,4 +32,21 @@ DList::Node::Node( ElementType initData )
 {
     data = initData;
     next = NULL;
+}
+
+
+// DList.getSize() - Returns the number of nodes currently held by
+// the linked list.
+int DList::getSize()
+{
+    int size = 0;
+    Node *ptr = first;
+    
+    while ( ptr != 0 )
+    {
+        ptr = ptr->next;
+        size++
+    }
+    
+    return size;
 }
