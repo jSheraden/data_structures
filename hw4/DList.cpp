@@ -35,18 +35,8 @@ DList::Node::Node( ElementType initData )
 }
 
 
-// DList.getSize() - Returns the number of nodes currently held by
-// the linked list.
-int DList::getSize()
+// DList.getSize() - Returns the number of nodes currently held by the linked list.
+int DList::getSize() const
 {
-    int size = 0;
-    Node *ptr = first;
-    
-    while ( ptr != 0 )
-    {
-        ptr = ptr->next;
-        size++
-    }
-    
-    return size;
+    return mySize;
 }
