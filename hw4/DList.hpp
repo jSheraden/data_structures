@@ -32,7 +32,6 @@ class DList
         void display( std::ostream &out ) const;
         void setCapacity( int newCapacity );
         int getSize() const;
-        int getCapacity() const;
 };
 
 std::ostream &operator<<( std::ostream &out, const DList &aList );
