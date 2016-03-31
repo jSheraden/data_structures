@@ -105,7 +105,7 @@ void DList::erase( int index )
     if ( current->next->next != NULL )
     {
         delete[] current->next;
-        current->next = current->next->next;
+        current->next = current->next->next;   // Why does this work?
     }
     
     // If not, just delete the node at the specified index.
@@ -131,7 +131,7 @@ void DList::display( std::ostream &out ) const
     }
 }
 
-// DList.getSize() - Returns the number of nodes currently held by the linked list.
+// DList.getSize() - Returns the number of nodes currently in the linked list.
 int DList::getSize() const
 {
     return mySize;
