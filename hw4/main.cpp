@@ -35,6 +35,19 @@ int main()
     std::cout << std::endl;
     */
     
+    DList dList;
+    
+    dList.insert( 5, 0 );
+    dList.insert( 10, 1 );
+    dList.insert( 3, 2 );
+    dList.insert( 4, 3 );
+    dList.insert( 7, 4 );
+    dList.erase( 2 );
+    dList.insert( 5, 5 );
+    dList.display( std::cout );
+    
+    std::cout << std::endl;
+    std::cout << dList.getSize() << std::endl;
     std::cout << "Success!" << std::endl;
     
     return 0;   // Exit the program.
