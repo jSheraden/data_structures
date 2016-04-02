@@ -13,6 +13,8 @@ DList::DList( const DList &source ) : first( NULL )
     mySize = 0;
     NodePointer current = source.first;
     
+    // Assign the value of each node in source
+    // to a new node in the list.
     for ( int i = 0; current != NULL; i++ )
     {
         insert( current->data, i );
@@ -51,6 +53,8 @@ int DList::find( ElementType value ) const
 {
     NodePointer current = first;
     
+    // Traverse the list until a node with the specified
+    // value is found, then return the index of that node.
     for ( int i = 0; current != NULL; i++ )
     {
         if ( current->data == value )
@@ -63,7 +67,7 @@ int DList::find( ElementType value ) const
         }
     }
     
-    return -1;
+    return -1;   // The the value is not found in the list, return -1.
 }
 
 // DList.empty() - Determine if the linked list is empty or not.

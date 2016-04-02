@@ -6,6 +6,7 @@ void displayMenuOptions()
     std::cout << "\n-------------------------"
         << "\n\nThe following choices are available:\n" 
         << "\nE. Print the result from the empty() function"
+        << "\nF. Print the index of a specific value in the list"
         << "\nP. Print a copy of the entire list"
         << "\nI. Insert a new string with the insert(...) function"
         << "\nR. Remove a list item with the erase() function"
@@ -30,6 +31,27 @@ void processMenuSelection( char &choice, DList &dList )
         // Option E - Determine if the list is empty or not.
         case 'E':
             std::cout << ( dList.empty() ? "The list is empty." : "The list is not empty." ) << std::endl;
+            break;
+        
+        // Option F - Print the index of a specific value in the list.
+        case 'F':
+            {
+                ElementType searchStr;
+                int pos;
+                std::cout << "Enter a string: ";
+                std::getline( std::cin, searchStr );
+                
+                pos = dList.find( searchStr );
+                
+                if ( pos == -1 )
+                {
+                    std::cout << "\nThat string is not in the list." << std::endl;
+                }
+                else
+                {
+                    std::cout << "\nThe position of that string in the list is " << pos << "." << std::endl;
+                }
+            }
             break;
             
         // Option P - Print the list.
