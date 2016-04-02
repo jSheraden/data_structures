@@ -43,8 +43,12 @@ int main()
     dList.insert( 4, 3 );
     dList.insert( 7, 4 );
     dList.erase( 2 );
+    dList.erase( 2 );
     dList.insert( 5, 5 );
-    dList.display( std::cout );
+    
+    DList newList( dList );
+    
+    newList.display( std::cout );
     
     std::cout << std::endl;
     std::cout << dList.getSize() << std::endl;

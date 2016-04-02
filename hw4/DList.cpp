@@ -8,9 +8,16 @@ DList::DList() : first( NULL )
 
 // An overloaded constructor that assigns the values of a DList
 // object to a new one.
-DList::DList( const DList &source )
+DList::DList( const DList &source ) : first( NULL )
 {
-    // this = source;
+    mySize = 0;
+    NodePointer current = source.first;
+    
+    for ( int i = 0; current != NULL; i++ )
+    {
+        insert( current->data, i );
+        current = current->next;
+    }
 }
 
 // The destructor deletes all nodes in the linked list.
@@ -140,5 +147,18 @@ int DList::getSize() const
 // Overloaded assignment operator.
 const DList &DList::operator=( const DList &rightHandSide )
 {
+    NodePointer current = rightHandSide.first;
+
+    if ( this == &rightHandSide )
+    {
+        return *this;
+    }
     
+    for ( int i = 0; current != NULL; i++ )
+    {
+        insert( current->data, i );
+        current = current->next;
+    }
+    
+    return *this;
 }
