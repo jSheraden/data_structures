@@ -7,7 +7,7 @@
 #include <iostream>
 #include <cassert>
 #include "DList.cpp"
-#include "driver_functions.cpp"
+// #include "driver_functions.cpp"
 
 int main()
 {
@@ -37,22 +37,19 @@ int main()
     
     DList dList;
     
-    dList.insert( 5, 0 );
-    dList.insert( 10, 1 );
-    dList.insert( 3, 2 );
-    dList.insert( 4, 3 );
-    dList.insert( 7, 4 );
-    dList.erase( 2 );
-    dList.erase( 2 );
-    dList.insert( 5, 5 );
+    dList.insert( "Hello", 0 );
+    dList.insert( "there,", 1 );
+    dList.insert( "my", 2 );
+    dList.insert( "name", 3 );
+    dList.insert( "is", 4 );
+    dList.insert( "Joey.", 5 );
     
-    DList newList( dList );
+    DList otherList = dList;
     
-    newList.display( std::cout );
+    otherList.display( std::cout );
     
     std::cout << std::endl;
     std::cout << dList.getSize() << std::endl;
-    std::cout << "Success!" << std::endl;
     
     return 0;   // Exit the program.
 }

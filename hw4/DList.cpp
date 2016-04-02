@@ -35,7 +35,7 @@ DList::~DList()
 // Default constructor for the nested class Node.
 DList::Node::Node()
 {
-    data = 0;
+    data = "";
     next = NULL;
 }
 
@@ -51,12 +51,19 @@ int DList::find( ElementType value ) const
 {
     NodePointer current = first;
     
-    for ( int i = 0; i < value; i++ )
+    for ( int i = 0; current != NULL; i++ )
     {
-        current = current->next;
+        if ( current->data == value )
+        {
+            return i;
+        }
+        else
+        {
+            current = current->next;
+        }
     }
     
-    return current->data;
+    return -1;
 }
 
 // DList.empty() - Determine if the linked list is empty or not.
@@ -68,7 +75,7 @@ bool DList::empty() const
 // DList.insert() - Inserts a new node into the linked list.
 void DList::insert( ElementType dataVal, int index )
 {
-    NodePointer newNode = new Node(dataVal);
+    NodePointer newNode = new Node( dataVal );
     
     // If first is null, the new node becomes the beginning
     // of the list.

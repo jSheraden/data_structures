@@ -1,7 +1,7 @@
 #ifndef DLIST_HPP
 #define DLIST_HPP
 
-typedef int ElementType;
+typedef std::string ElementType;
 
 class DList
 {
