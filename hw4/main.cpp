@@ -33,23 +33,5 @@ int main()
     
     std::cout << std::endl;
     
-    /*
-    DList dList;
-    
-    dList.insert( "Hello", 0 );
-    dList.insert( "there,", 1 );
-    dList.insert( "my", 2 );
-    dList.insert( "name", 3 );
-    dList.insert( "is", 4 );
-    dList.insert( "Joey.", 5 );
-    
-    DList otherList = dList;
-    
-    otherList.display( std::cout );
-    
-    std::cout << std::endl;
-    std::cout << dList.getSize() << std::endl;
-    */
-    
     return 0;   // Exit the program.
 }
