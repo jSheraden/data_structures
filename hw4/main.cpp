@@ -7,19 +7,18 @@
 #include <iostream>
 #include <cassert>
 #include "DList.cpp"
-// #include "driver_functions.cpp"
+#include "driver_functions.cpp"
 
 int main()
 {
-    /*
-    DList dList( 5 );         // Declare an object of class DList.
+    DList dList;              // Declare an object of class DList.
     char userChoice = '\0';   // Stores menu selections entered by the user.
     
     // Driver program loop.
     while ( userChoice != 'Q' )
     {
         // Display the program menu.
-        displayMenuOptions( dList );
+        displayMenuOptions();
         
         // Get menu selection from the user.
         std::cout << "\n\nEnter your choice: ";
@@ -33,8 +32,8 @@ int main()
     }
     
     std::cout << std::endl;
-    */
     
+    /*
     DList dList;
     
     dList.insert( "Hello", 0 );
@@ -50,6 +49,7 @@ int main()
     
     std::cout << std::endl;
     std::cout << dList.getSize() << std::endl;
+    */
     
     return 0;   // Exit the program.
 }

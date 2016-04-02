@@ -1,0 +1,100 @@
+jsheraden:~/workspace/cpp/data_structures/hw4 (master) $ ./bin/hw4
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: i
+
+Enter a string for a new list item: hello
+Where in the array should this new item be? 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: p
+
+List: hello 
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: e
+
+The list is not empty.
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: r
+
+Enter the position in the list of the item to be erased: 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: p
+
+List: 
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: e
+
+The list is empty.
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: q
+
+jsheraden:~/workspace/cpp/data_structures/hw4 (master) $ 

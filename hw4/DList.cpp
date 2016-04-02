@@ -106,26 +106,22 @@ void DList::erase( int index )
 {
     NodePointer current = first;
     
-    // Loop through the list until one node before
-    // the specified index.
-    for ( int i = 0; i < index - 1; i++ )
+    if ( index < 0 || index > mySize )
     {
-        current = current->next;
+        std::cout << "Node not found in the list." << std::endl;
     }
-    
-    // If the node that comes after the one at the
-    // specified index is not empty, that node takes
-    // its place.
-    if ( current->next->next != NULL )
+    else if ( index == 0 )
     {
-        delete[] current->next;
-        current->next = current->next->next;   // Why does this work?
+        first = first->next;
     }
-    
-    // If not, just delete the node at the specified index.
     else
     {
-        delete[] current->next;
+        for ( int i = 0; i < index - 1; i++ )
+        {
+            current = current->next;
+        }
+        
+        current->next = current->next->next;
     }
     
     mySize--;   // Reduce the size of the list by 1.
