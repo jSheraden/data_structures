@@ -5,7 +5,6 @@
 // Instructor: Bob Comer
 // Date: March 18, 2016
 #include <iostream>
-#include <cassert>
 #include "DList.cpp"
 #include "driver_functions.cpp"
 
