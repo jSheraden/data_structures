@@ -5,6 +5,22 @@ jsheraden:~/workspace/cpp/data_structures/hw4 (master) $ ./bin/hw4
 The following choices are available:
 
 E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: e
+
+The list is empty.
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
 P. Print a copy of the entire list
 I. Insert a new string with the insert(...) function
 R. Remove a list item with the erase() function
@@ -20,20 +36,7 @@ Where in the array should this new item be? 0
 The following choices are available:
 
 E. Print the result from the empty() function
-P. Print a copy of the entire list
-I. Insert a new string with the insert(...) function
-R. Remove a list item with the erase() function
-Q. Quit this test program
-
-Enter your choice: p
-
-List: hello 
-
--------------------------
-
-The following choices are available:
-
-E. Print the result from the empty() function
+F. Print the index of a specific value in the list
 P. Print a copy of the entire list
 I. Insert a new string with the insert(...) function
 R. Remove a list item with the erase() function
@@ -48,6 +51,103 @@ The list is not empty.
 The following choices are available:
 
 E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: I
+
+Enter a string for a new list item: my
+Where in the array should this new item be? 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: i
+
+Enter a string for a new list item: name
+Where in the array should this new item be? 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: i
+
+Enter a string for a new list item: is
+Where in the array should this new item be? 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: i
+
+Enter a string for a new list item: joey
+Where in the array should this new item be? 0
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: p
+
+List: hello my name is joey 
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
+P. Print a copy of the entire list
+I. Insert a new string with the insert(...) function
+R. Remove a list item with the erase() function
+Q. Quit this test program
+
+Enter your choice: f
+
+Enter a string: name
+
+The position of that string in the list is 2.
+
+-------------------------
+
+The following choices are available:
+
+E. Print the result from the empty() function
+F. Print the index of a specific value in the list
 P. Print a copy of the entire list
 I. Insert a new string with the insert(...) function
 R. Remove a list item with the erase() function
@@ -62,6 +162,7 @@ Enter the position in the list of the item to be erased: 0
 The following choices are available:
 
 E. Print the result from the empty() function
+F. Print the index of a specific value in the list
 P. Print a copy of the entire list
 I. Insert a new string with the insert(...) function
 R. Remove a list item with the erase() function
@@ -69,27 +170,14 @@ Q. Quit this test program
 
 Enter your choice: p
 
-List: 
+List: my name is joey 
 
 -------------------------
 
 The following choices are available:
 
 E. Print the result from the empty() function
-P. Print a copy of the entire list
-I. Insert a new string with the insert(...) function
-R. Remove a list item with the erase() function
-Q. Quit this test program
-
-Enter your choice: e
-
-The list is empty.
-
--------------------------
-
-The following choices are available:
-
-E. Print the result from the empty() function
+F. Print the index of a specific value in the list
 P. Print a copy of the entire list
 I. Insert a new string with the insert(...) function
 R. Remove a list item with the erase() function
@@ -97,4 +185,5 @@ Q. Quit this test program
 
 Enter your choice: q
 
+Segmentation fault
 jsheraden:~/workspace/cpp/data_structures/hw4 (master) $ 
