@@ -5,6 +5,7 @@
 // Instructor: Bob Comer
 // Date: April 5, 2016
 #include <iostream>
+#include <new>
 #include "Queue.cpp"
 
 int main()
