@@ -14,7 +14,7 @@ Queue::Queue( const Queue &original )
         myFront = myBack = new Queue::Node( original.front() );
         
         // Set pointer to run through original's linked list.
-        Queue::NodePointer origPtr = original.myFront->next;
+        NodePointer origPtr = original.myFront->next;
         
         while ( origPtr != 0 )
         {
@@ -29,7 +29,7 @@ Queue::Queue( const Queue &original )
 Queue::~Queue()
 {
     // Set pointer to run through the queue.
-    Queue::NodePointer prev = myFront, ptr;
+    NodePointer prev = myFront, ptr;
     
     while ( prev != 0 )
     {
@@ -57,7 +57,7 @@ const Queue &Queue::operator=( const Queue &rightHandSide )
             myFront = myBack = new Queue::Node( rightHandSide.front() );
             
             // Set pointer to run through rightHandSide's linked list.
-            Queue::NodePointer rhsPtr = rightHandSide.myFront->next;
+            NodePointer rhsPtr = rightHandSide.myFront->next;
             
             while ( rhsPtr != 0 )
             {
@@ -79,9 +79,9 @@ bool Queue::empty() const
 }
 
 // Queue.enqueue()
-void Queue::enqueue( const QueueElement &value );
+void Queue::enqueue( const QueueElement &value )
 {
-    Queue::NodePointer newPtr = new Queue::Node( value );
+    NodePointer newPtr = new Queue::Node( value );
     
     if ( empty() )
     {
@@ -97,14 +97,14 @@ void Queue::enqueue( const QueueElement &value );
 // Queue.display() - Print each element in the queue.
 void Queue::display( std::ostream &out ) const
 {
-    Queue::NodePointer ptr;
+    NodePointer ptr;
     
     for ( ptr = myFront; ptr != 0; ptr = ptr->next )
     {
         out << ptr->data << " ";
     }
     
-    out << end;
+    out << std::endl;
 }
 
 // Queue.front()
@@ -128,11 +128,11 @@ QueueElement Queue::front() const
 }
 
 // Queue.dequeue()
-void dequeue()
+void Queue::dequeue()
 {
     if ( !empty() )
     {
-        Queue::NodePointer ptr = myFront;
+        NodePointer ptr = myFront;
         myFront = myFront->next;
         
         delete ptr;

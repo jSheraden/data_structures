@@ -11,7 +11,7 @@ class Queue
             public:
                 QueueElement data;
                 Node *next;
-                Node( QueueElement value, Node *link = 0 ) : data( value ), next( link );
+                Node( QueueElement value, Node *link = 0 ) : data( value ), next( link ) {}
         };
         
         typedef Node * NodePointer;
