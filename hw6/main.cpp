@@ -3,10 +3,10 @@
 // Project Description: Queue using a Circular Linked List
 // Course: Data Structures
 // Instructor: Bob Comer
-// Date: April 5, 2016
+// Date: April 21, 2016
 #include <iostream>
 #include <new>
-#include "Queue.cpp"
+#include "Queue.hpp"
 
 int main()
 {

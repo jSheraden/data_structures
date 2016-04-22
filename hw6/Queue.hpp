@@ -1,6 +1,8 @@
 #ifndef QUEUE_HPP
 #define QUEUE_HPP
 
+#include <iostream>
+
 typedef int QueueElement;
 
 class Queue
@@ -13,9 +15,9 @@ class Queue
                 Node *next;
                 Node( QueueElement value, Node *link = 0 ) : data( value ), next( link ) {}
         };
-        
+
         typedef Node * NodePointer;
-        
+
         NodePointer myFront, myBack;
     public:
         Queue();

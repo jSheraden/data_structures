@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1461301826 source:c:\cpp\data_structures\hw6\main.cpp
+	<iostream>
+	<new>
+	"Queue.hpp"
+
+1461301959 c:\cpp\data_structures\hw6\queue.hpp
+	<iostream>
+
