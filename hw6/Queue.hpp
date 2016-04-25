@@ -20,15 +20,32 @@ class Queue
 
         NodePointer myFront, myBack;
     public:
+        // The main constructor.
         Queue();
+
+        // The class has no copy constructor.
         Queue( const Queue &original );
+
+        // Destructor.
         ~Queue();
-        const Queue &operator=( const Queue &rightHandSide );
+
+        // Queue.empty() - Determine if the queue is empty or not.
         bool empty() const;
+
+        // Queue.enqueue()
         void enqueue( const QueueElement &value );
+
+        // Queue.display() - Print each element in the queue.
         void display( std::ostream &out ) const;
+
+        // Queue.front()
         QueueElement front() const;
+
+        // Queue.dequeue()
         void dequeue();
+
+        // The class has no assignment operator.
+        const Queue &operator=( const Queue &rightHandSide );
 };
 
 #endif
