@@ -12,27 +12,6 @@ Queue::~Queue()
         delete current;
         current = current->next;
     }
-    /*
-    while ( current )
-    {
-        temp = current;
-        current = current->next;
-
-        delete temp;
-    }
-    */
-
-    /*
-    NodePointer prev = myBack;
-    NodePointer ptr;
-
-    while ( prev )
-    {
-        ptr = prev->next;
-        delete prev;
-        prev = ptr;
-    }
-    */
 }
 
 bool Queue::empty() const
@@ -93,6 +72,8 @@ QueueElement Queue::front() const
 
 void Queue::dequeue()
 {
+    // If the list is empty, remove the node
+    // at the front of the list.
     if ( !empty() )
     {
         NodePointer ptr = myBack;

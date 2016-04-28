@@ -33,7 +33,7 @@ int main()
     std::cout << "Nodes: ";
     queue.display( std::cout );
 
-    // What value does the node at the beginning
+    // What value does the node at the front
     // of the list have?
     std::cout << "Front node: " << queue.front() << std::endl;
 
