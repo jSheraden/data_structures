@@ -19,6 +19,7 @@ int main()
     queue.enqueue( 15 );
     queue.enqueue( 20 );
     queue.display( std::cout );
+    std::cout << queue.front() << std::endl;
     queue.dequeue();
 
     std::cout << "Success!" << std::endl;

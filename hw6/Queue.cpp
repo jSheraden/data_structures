@@ -54,7 +54,7 @@ void Queue::display( std::ostream &out ) const
 
 QueueElement Queue::front() const
 {
-    if ( empty() )
+    if ( !empty() )
     {
         return myBack->data;
     }
