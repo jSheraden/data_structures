@@ -1,0 +1,8 @@
+The list is empty.
+*** Queue is empty -- can't remove a value ***
+Nodes: 20 15 10 5
+The list is not empty.
+Front node: 20
+
+Process returned 0 (0x0)   execution time : 0.017 s
+Press any key to continue.

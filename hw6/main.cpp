@@ -34,6 +34,10 @@ int main()
     std::cout << "Nodes: ";
     queue.display( std::cout );
 
+    // Now that the list has nodes in it,
+    // it's not empty anymore.
+    std::cout << ( queue.empty() ? "The list is empty." : "The list is not empty." ) << std::endl;
+
     // What value does the node at the front
     // of the list have?
     std::cout << "Front node: " << queue.front() << std::endl;
