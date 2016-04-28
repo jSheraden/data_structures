@@ -18,7 +18,7 @@ class Queue
 
         typedef Node * NodePointer;
 
-        NodePointer myFront, myBack;
+        NodePointer myBack;
     public:
         // The main constructor.
         Queue();

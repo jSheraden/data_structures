@@ -14,9 +14,12 @@ int main()
 
     std::cout << ( queue.empty() ? "true" : "false" ) << std::endl;
 
-    queue.enqueue(5);
-    queue.enqueue(10);
+    queue.enqueue( 5 );
+    queue.enqueue( 10 );
+    queue.enqueue( 15 );
+    queue.enqueue( 20 );
     queue.display( std::cout );
+    queue.dequeue();
 
     std::cout << "Success!" << std::endl;
     return 0;

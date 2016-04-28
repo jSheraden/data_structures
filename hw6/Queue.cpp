@@ -1,23 +1,24 @@
 #include "Queue.hpp"
 
-Queue::Queue() : myFront( 0 ), myBack( 0 ) {}
+Queue::Queue() : myBack( 0 ) {}
 
 Queue::~Queue()
 {
     // Set pointer to run through the queue.
-    NodePointer prev = myFront, ptr;
+    NodePointer prev = myBack, ptr;
 
-    while ( prev != 0 )
+    /*while ( prev != 0 )
     {
         ptr = prev->next;
         delete prev;
         prev = ptr;
     }
+    */
 }
 
 bool Queue::empty() const
 {
-    return ( myFront == 0 );
+    return ( myBack == 0 );
 }
 
 void Queue::enqueue( const QueueElement &value )
@@ -26,11 +27,12 @@ void Queue::enqueue( const QueueElement &value )
 
     if ( empty() )
     {
-        myFront = myBack = newPtr;
+        myBack = newPtr;
+        myBack->next = myBack;
     }
     else
     {
-        myBack->next = newPtr;
+        newPtr->next = myBack;
         myBack = newPtr;
     }
 }
@@ -39,19 +41,22 @@ void Queue::display( std::ostream &out ) const
 {
     NodePointer ptr;
 
-    for ( ptr = myFront; ptr != 0; ptr = ptr->next )
+    // Print the queued nodes. It skips the last node
+    // for some reason.
+    for ( ptr = myBack; ptr->next != ptr; ptr = ptr->next )
     {
         out << ptr->data << " ";
     }
 
-    out << std::endl;
+    // Print the last node.
+    out << ptr->data << std::endl;
 }
 
 QueueElement Queue::front() const
 {
     if ( empty() )
     {
-        return myFront->data;
+        return myBack->data;
     }
     else
     {
@@ -70,12 +75,11 @@ void Queue::dequeue()
 {
     if ( !empty() )
     {
-        NodePointer ptr = myFront;
-        myFront = myFront->next;
+        NodePointer ptr = myBack;
 
         delete ptr;
 
-        if ( myFront == 0 )
+        if ( myBack->next == 0 )
         {
             myBack = 0;
         }
