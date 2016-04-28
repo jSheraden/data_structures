@@ -4,10 +4,29 @@ Queue::Queue() : myBack( 0 ) {}
 
 Queue::~Queue()
 {
-    // Set pointer to run through the queue.
-    NodePointer prev = myBack, ptr;
+    // NodePointer temp = 0;
+    NodePointer current = myBack;
 
-    /*while ( prev != 0 )
+    while ( current->next != current )
+    {
+        delete current;
+        current = current->next;
+    }
+    /*
+    while ( current )
+    {
+        temp = current;
+        current = current->next;
+
+        delete temp;
+    }
+    */
+
+    /*
+    NodePointer prev = myBack;
+    NodePointer ptr;
+
+    while ( prev )
     {
         ptr = prev->next;
         delete prev;
@@ -39,17 +58,18 @@ void Queue::enqueue( const QueueElement &value )
 
 void Queue::display( std::ostream &out ) const
 {
-    NodePointer ptr;
+    NodePointer current = myBack;
 
     // Print the queued nodes. It skips the last node
     // for some reason.
-    for ( ptr = myBack; ptr->next != ptr; ptr = ptr->next )
+    while ( current->next != current )
     {
-        out << ptr->data << " ";
+        out << current->data << " ";
+        current = current->next;
     }
 
     // Print the last node.
-    out << ptr->data << std::endl;
+    out << current->data << std::endl;
 }
 
 QueueElement Queue::front() const
@@ -76,6 +96,8 @@ void Queue::dequeue()
     if ( !empty() )
     {
         NodePointer ptr = myBack;
+
+        myBack = myBack->next;
 
         delete ptr;
 
