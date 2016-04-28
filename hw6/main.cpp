@@ -10,24 +10,33 @@
 
 int main()
 {
+    // Initialize a Queue (circular linked list) object.
     Queue queue;
 
-    std::cout << ( queue.empty() ? "true" : "false" ) << std::endl;
+    // The list should be empty at this point.
+    std::cout << ( queue.empty() ? "The list is empty." : "The list is not empty." ) << std::endl;
 
+    // What happens if I try to remove a node
+    // from an empty list?
     queue.dequeue();
+
+    // Enqueue some nodes.
     queue.enqueue( 5 );
     queue.enqueue( 10 );
     queue.enqueue( 15 );
     queue.enqueue( 20 );
+
+    // Remove one node.
     queue.dequeue();
+
+    // Print the list of nodes.
+    std::cout << "Nodes: ";
     queue.display( std::cout );
 
-    std::cout << queue.front() << std::endl;
+    // What value does the node at the beginning
+    // of the list have?
+    std::cout << "Front node: " << queue.front() << std::endl;
 
-    // queue.~Queue();
-
-    queue.display( std::cout );
-
-    std::cout << "Success!" << std::endl;
+    // Exit the program.
     return 0;
 }
