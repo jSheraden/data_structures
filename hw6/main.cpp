@@ -25,6 +25,7 @@ int main()
     queue.enqueue( 10 );
     queue.enqueue( 15 );
     queue.enqueue( 20 );
+    queue.enqueue( 25 );
 
     // Remove one node.
     queue.dequeue();

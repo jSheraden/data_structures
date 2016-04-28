@@ -4,7 +4,6 @@ Queue::Queue() : myBack( 0 ) {}
 
 Queue::~Queue()
 {
-    // NodePointer temp = 0;
     NodePointer current = myBack;
 
     while ( current->next != current )
@@ -12,6 +11,8 @@ Queue::~Queue()
         delete current;
         current = current->next;
     }
+
+    delete myBack;
 }
 
 bool Queue::empty() const
