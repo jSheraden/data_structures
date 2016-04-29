@@ -13,13 +13,17 @@ int main()
     // to quit.
     while ( !quit )
     {
+        // Get an expression from the user.
         std::cout << "Enter an expression: ";
         std::getline( std::cin, expression );
 
+        // Does the user choose to quit?
         std::cout << "\nDo you want to enter another expression? (y/n) ";
         std::cin  >> choice;
         std::cin.ignore();
 
+        // Evaluate the user's choice of whether or
+        // not to quit.
         quit = ( choice == 'y' || choice == 'y' );
 
         // If the user wants to evaluate another expression,
@@ -27,5 +31,6 @@ int main()
         if ( !quit ) { std::cout << std::endl; }
     }
 
+    // Exit the program.
     return 0;
 }

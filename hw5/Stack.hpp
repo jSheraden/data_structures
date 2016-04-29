@@ -43,7 +43,7 @@ class Stack
         void push( const StackElement &value );
 
         // Stack.display() - print the stack to the console.
-        void display( std::ostream ) const;
+        void display( std::ostream &out ) const;
 
         // Stack.top() - returns the item at the top of
         // the stack.
