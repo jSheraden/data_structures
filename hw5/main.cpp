@@ -1,7 +1,9 @@
 #include <iostream>
+#include "Stack.hpp"
 
 int main()
 {
+    // Stack stack;
     std::string expression;
     char choice;
     bool quit = false;
