@@ -25,7 +25,7 @@ int main()
 
         // Evaluate the user's choice of whether or
         // not to quit.
-        quit = ( choice == 'y' || choice == 'y' );
+        quit = ( choice == 'N' || choice == 'n' );
 
         // If the user wants to evaluate another expression,
         // print another line for neatness.

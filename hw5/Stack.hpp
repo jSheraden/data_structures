@@ -29,7 +29,7 @@ class Stack
         // Stack class constructor.
         Stack();
 
-        // Overloaded Stack class constructor.
+        // Stack class copy constructor.
         Stack( const Stack &original );
 
         // Stack class destructor.
