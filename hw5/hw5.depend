@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1461906335 source:c:\cpp\data_structures\hw5\main.cpp
+1461990328 source:c:\cpp\data_structures\hw5\main.cpp
 	<iostream>
+	<new>
 	"Stack.hpp"
 
-1461906601 c:\cpp\data_structures\hw5\stack.hpp
+1461987795 c:\cpp\data_structures\hw5\stack.hpp
 	<iostream>
 
-1461906662 source:c:\cpp\data_structures\hw5\stack.cpp
+1461990445 source:c:\cpp\data_structures\hw5\stack.cpp
+	<new>
 	"Stack.hpp"
 

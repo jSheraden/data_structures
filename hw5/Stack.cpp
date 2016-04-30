@@ -45,7 +45,7 @@ Stack::~Stack()
 const Stack &Stack::operator=( const Stack &rightHandSide )
 {
     // Check that st != st.
-    if ( this != rightHandSide )
+    if ( this != &rightHandSide )
     {
         // Destroy current linked list.
         this->~Stack();
@@ -63,7 +63,7 @@ const Stack &Stack::operator=( const Stack &rightHandSide )
             myTop = new Node( rightHandSide.top() );
 
             // Set pointers to run through the stack's linked lists.
-            NodePointer lastPtr = myTop
+            NodePointer lastPtr = myTop;
             NodePointer rhsPtr = rightHandSide.myTop->next;
 
             while ( rhsPtr != 0 )

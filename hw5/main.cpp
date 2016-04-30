@@ -1,9 +1,10 @@
 #include <iostream>
+#include <new>
 #include "Stack.hpp"
 
 int main()
 {
-    // Stack stack;
+    Stack stack;
     std::string expression;
     char choice;
     bool quit = false;
