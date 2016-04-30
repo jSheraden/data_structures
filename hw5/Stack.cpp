@@ -30,14 +30,14 @@ Stack::Stack( const Stack &original )
 Stack::~Stack()
 {
     // Set pointers to run through the stack.
-    NodePointer currPtr = myTop; // Node to be deallocated.
+    NodePointer current = myTop; // Node to be deallocated.
     NodePointer nextPtr;         // Its successor.
 
-    while ( currPtr != 0 )
+    while ( current != 0 )
     {
-        nextPtr = currPtr->next;
-        delete currPtr;
-        currPtr = nextPtr;
+        nextPtr = current->next;
+        delete current;
+        current = nextPtr;
     }
 }
 
@@ -93,11 +93,11 @@ void Stack::push( const StackElement &value )
 // Definition of display().
 void Stack::display( std::ostream &out ) const
 {
-    NodePointer ptr;
+    NodePointer current;
 
-    for ( ptr = myTop; ptr != 0; ptr = ptr->next )
+    for ( current = myTop; current != 0; current = current->next )
     {
-        out << ptr->data << " ";
+        out << current->data << " ";
     }
 }
 
@@ -121,7 +121,15 @@ StackElement Stack::top() const
     }
 }
 
+// Definition of pop().
 void Stack::pop()
 {
+    if ( !empty() )
+    {
+        NodePointer current = myTop;
 
+        myTop = myTop->next;
+
+        delete current;
+    }
 }
