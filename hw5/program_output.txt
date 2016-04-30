@@ -1,0 +1,47 @@
+Enter a postfix expression: 10 2 * 5 /
+The evaluated expression is: 4
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 2 3 4 + *
+The evaluated expression is: 14
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 5 2 + 2 /
+The evaluated expression is: 3
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 3 3 -
+The evaluated expression is: 0
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 7 20 +
+The evaluated expression is: 27
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 20 7 -
+The evaluated expression is: 13
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 10 10 * 5 /
+The evaluated expression is: 20
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 14 7 *
+The evaluated expression is: 98
+
+Do you want to enter another expression? (y/n) y
+
+Enter a postfix expression: 14 7 * 2 /
+The evaluated expression is: 49
+
+Do you want to enter another expression? (y/n) n
+
+Process returned 0 (0x0)   execution time : 853.226 s
+Press any key to continue.

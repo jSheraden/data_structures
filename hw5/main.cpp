@@ -29,7 +29,7 @@ int main()
     while ( !quit )
     {
         // Get an expression from the user.
-        std::cout << "Enter an expression: ";
+        std::cout << "Enter a postfix expression: ";
         std::getline( std::cin, expression );
 
         // Evaluate the expression.
@@ -78,11 +78,11 @@ int evaluatePostfix( std::string exp )
                 int leftSide, rightSide;
 
                 // Get the first operand.
-                leftSide = stack.top();
+                rightSide = stack.top();
                 stack.pop();
 
                 // Get the second operand.
-                rightSide = stack.top();
+                leftSide = stack.top();
                 stack.pop();
 
                 // Add the result of the two operands
