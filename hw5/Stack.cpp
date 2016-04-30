@@ -78,16 +78,19 @@ const Stack &Stack::operator=( const Stack &rightHandSide )
     return *this;
 }
 
+// Definition of empty().
 bool Stack::empty() const
 {
-
+    return ( myTop == 0 );
 }
 
+// Definition of push().
 void Stack::push( const StackElement &value )
 {
-
+    myTop = new Node( value, myTop );
 }
 
+// Definition of display().
 void Stack::display( std::ostream &out ) const
 {
 
@@ -95,7 +98,26 @@ void Stack::display( std::ostream &out ) const
 
 StackElement Stack::top() const
 {
+    NodePointer ptr;
 
+    for ( ptr = myTop; ptr != 0; ptr = ptr->next )
+    {
+        if ( !empty() )
+        {
+            return myTop->data;
+        }
+        else
+        {
+            std::cerr << "*** Stack is empty -- returning garbage ***\n";
+
+            StackElement *temp = new( StackElement );
+            StackElement garbage = *temp;   // Garbage value.
+
+            delete temp;
+
+            return garbage;
+        }
+    }
 }
 
 void Stack::pop()
