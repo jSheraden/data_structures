@@ -27,6 +27,9 @@ class Stack
         NodePointer myTop;
     public:
         // Stack class constructor.
+        Stack();
+
+        // Overloaded Stack class constructor.
         Stack( const Stack &original );
 
         // Stack class destructor.

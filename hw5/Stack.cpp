@@ -1,8 +1,29 @@
+#include <new>
 #include "Stack.hpp"
+
+// Definition of Stack constructor.
+Stack::Stack() : myTop( 0 ) {}
 
 Stack::Stack( const Stack &original )
 {
+    myTop = 0;
 
+    if ( !original.empty() )
+    {
+        // Copy first node.
+        myTop = new Node( original.top() );
+
+        // Set pointers to run through the stack's linked lists.
+        NodePointer lastPtr = myTop;
+        NodePointer origPtr = original.myTop->next;
+
+        while ( origPtr != 0 )
+        {
+            lastPtr->next = new Node( origPtr->data );
+            lastPtr = lastPtr->next;
+            origPtr = origPtr->next;
+        }
+    }
 }
 
 Stack::~Stack()
