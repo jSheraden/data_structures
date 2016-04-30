@@ -8,6 +8,9 @@
 #include <new>
 #include "Stack.hpp"
 
+// Done with a lot of help from mycodeschool on GitHub:
+// https://gist.github.com/mycodeschool/7702441
+
 // Driver function prototypes.
 int evaluatePostfix( std::string exp );
 int operate( int left, int right, char symbol );
@@ -69,7 +72,6 @@ int evaluatePostfix( std::string exp )
         {
             // If the current char is an operator, evaluate
             // the expression.
-            // if ( exp[i] == '+' || '-' || '*' || '/' )
             if ( exp[i] == '+' || exp[i] == '-' || exp[i] == '*' || exp[i] == '/' )
             {
                 // Initialize two operands.
