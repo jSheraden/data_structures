@@ -93,30 +93,31 @@ void Stack::push( const StackElement &value )
 // Definition of display().
 void Stack::display( std::ostream &out ) const
 {
-
-}
-
-StackElement Stack::top() const
-{
     NodePointer ptr;
 
     for ( ptr = myTop; ptr != 0; ptr = ptr->next )
     {
-        if ( !empty() )
-        {
-            return myTop->data;
-        }
-        else
-        {
-            std::cerr << "*** Stack is empty -- returning garbage ***\n";
+        out << ptr->data << " ";
+    }
+}
 
-            StackElement *temp = new( StackElement );
-            StackElement garbage = *temp;   // Garbage value.
+// Definition of top().
+StackElement Stack::top() const
+{
+    if ( !empty() )
+    {
+        return myTop->data;
+    }
+    else
+    {
+        std::cerr << "*** Stack is empty -- returning garbage ***\n";
 
-            delete temp;
+        StackElement *temp = new( StackElement );
+        StackElement garbage = *temp;   // Garbage value.
 
-            return garbage;
-        }
+        delete temp;
+
+        return garbage;
     }
 }
 
