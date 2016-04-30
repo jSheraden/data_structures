@@ -1,4 +1,3 @@
-#include <new>
 #include "Stack.hpp"
 
 // Definition of Stack constructor.
