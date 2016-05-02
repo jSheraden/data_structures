@@ -31,6 +31,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Stack.cpp" />
+		<Unit filename="Stack.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
