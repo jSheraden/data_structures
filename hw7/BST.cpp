@@ -127,7 +127,7 @@ inline void BST<DataType>::inOrder( std::ostream &out ) const
 
 // BST.graph()
 template <typename DataType>
-void BST<DataType>::graph( std::ostream &out ) const
+inline void BST<DataType>::graph( std::ostream &out ) const
 {
     graphAux( out, 0, myRoot );
 }
@@ -152,8 +152,13 @@ inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subtree
 }
 
 // BST.graphAux()
-template <typename DataType> inline
-void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subTreeRoot ) const
+template <typename DataType>
+void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subtreeRoot ) const
 {
-
+    if ( subtreeRoot != 0 )
+    {
+        graphAux( out, indent + 8, subtreeRoot->right );
+        out << setw( indent ) << " " << subtreeRoot->data << std::endl;
+        graphAux( out, indent + 8, subtreeRoot->left );
+    }
 }

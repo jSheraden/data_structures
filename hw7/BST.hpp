@@ -2,6 +2,7 @@
 #define BST_HPP
 
 #include <iostream>
+#include <iomanip>
 #include <new>
 
 template <typename DataType>
@@ -31,7 +32,7 @@ class BST
         // Private function members.
         void search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const;
         void inOrderAux( std::ostream &out, BinNodePointer subtreePtr ) const;
-        void graphAux( std::ostream &out, int indent, BinNodePointer subTreeRoot ) const;
+        void graphAux( std::ostream &out, int indent, BinNodePointer subtreeRoot ) const;
 
         // Private data members.
         BinNodePointer myRoot;
