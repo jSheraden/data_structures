@@ -30,9 +30,10 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++11" />
 		</Compiler>
-		<Unit filename="binary_search_tree.cpp" />
-		<Unit filename="binary_search_tree.hpp" />
+		<Unit filename="BST.cpp" />
+		<Unit filename="BST.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
