@@ -122,7 +122,7 @@ void BST<DataType>::remove( const DataType &item )
 template <typename DataType>
 inline void BST<DataType>::inOrder( std::ostream &out ) const
 {
-
+    inOrderAux( out, myRoot );
 }
 
 // BST.graph()
