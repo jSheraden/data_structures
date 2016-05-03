@@ -1,11 +1,10 @@
-#ifndef BINARY_SEARCH_TREE_HPP
-#define BINARY_SEARCH_TREE_HPP
+#ifndef BST_HPP
+#define BST_HPP
 
 #include <iostream>
 #include <new>
 
 template <typename DataType>
-
 class BST
 {
     private:

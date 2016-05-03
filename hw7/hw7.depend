@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1462263536 source:c:\cpp\data_structures\hw7\bst.cpp
+	"BST.hpp"
+
+1462263207 c:\cpp\data_structures\hw7\bst.hpp
+	<iostream>
+	<new>
+
+1462263551 source:c:\cpp\data_structures\hw7\main.cpp
+	<iostream>
+	<new>
+	"BST.hpp"
+
