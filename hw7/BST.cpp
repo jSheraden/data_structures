@@ -134,9 +134,27 @@ inline void BST<DataType>::graph( std::ostream &out ) const
 
 // BST.search2()
 template <typename DataType>
-inline void BST<DataType>::search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const
+void BST<DataType>::search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const
 {
+    locPtr = myRoot;
+    parent = 0;
+    found = false;
 
+    while ( !found && locPtr != 0 )
+    {
+        if ( item < locPtr->data )      // Descend left.
+        {
+            parent = locPtr;
+            locPtr = locPtr->left;
+        }
+        else if ( locPtr->data < item ) // Descend right.
+        {
+            parent = locPtr;
+            locPtr = locPtr->right;
+        }
+        else                            // Item found.
+            found = true;
+    }
 }
 
 // BST.inOrderAux()
