@@ -147,7 +147,7 @@ inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subtree
     {
         inOrderAux( out, subtreePtr->left );   // Left operation.
         out << subtreePtr->data << " ";        // V operation.
-        inOrderAux( out, subtreePtr>right );  // Right operation.
+        inOrderAux( out, subtreePtr->right );  // Right operation.
     }
 }
 
@@ -158,7 +158,7 @@ void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subt
     if ( subtreeRoot != 0 )
     {
         graphAux( out, indent + 8, subtreeRoot->right );
-        out << setw( indent ) << " " << subtreeRoot->data << std::endl;
+        out << std::setw( indent ) << " " << subtreeRoot->data << std::endl;
         graphAux( out, indent + 8, subtreeRoot->left );
     }
 }
