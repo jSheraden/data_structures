@@ -37,7 +37,7 @@ void BST<DataType>::insert( const DataType &item )
 {
     BinNodePointer locPtr = myRoot; // Search pointer.
     BinNodePointer parent = 0;      // Pointer to parent of current node.
-    bool found = false;             // Indicates of item is already in tree.
+    bool found = false;             // Indicates if item is already in tree.
 
     while ( !found && !locPtr == 0 )
     {
@@ -69,9 +69,53 @@ void BST<DataType>::insert( const DataType &item )
 
 // BST.remove()
 template <typename DataType>
-inline void BST<DataType>::remove( const DataType &item )
+void BST<DataType>::remove( const DataType &item )
 {
+    bool found;             // Signals if item is found.
+    BinNodePointer temp;    // Points to node to be deleted.
+    BinNodePointer parent;  // Parent of temp and tempSucc.
 
+    search2( item, found, temp, parent );
+
+    if ( !found )
+    {
+        std::cout << "Item not in the binary search tree." << std::endl;
+        return;
+    }
+
+    if ( temp->left != 0 && temp->right != 0 )
+    {
+        // Node has 2 children, find temp's inOrder successor
+        // and its parent.
+        BinNodePointer tempSucc = temp->right;
+        parent = temp;
+
+        while ( tempSucc->left != 0 )   // Descend left.
+        {
+            parent = tempSucc;
+            tempSucc = tempSucc->left;
+        }
+
+        // Move contents of tempSucc to temp and change temp
+        // to point to successor, which will be removed.
+        temp->data = tempSucc->data;
+        temp = tempSucc;
+    }   // End if node has 2 children.
+
+    // Now proceed with case where node has 0 of 1 child.
+    BinNodePointer subtree = temp->left;    // Pointer to a subtree of temp.
+
+    if ( subtree == 0 )
+        subtree = temp->right;
+
+    if ( parent == 0 )                      // Root being removed.
+        myRoot = subtree;
+    else if ( parent->left == temp )        // Left child of parent.
+        parent->left = subtree;
+    else
+        parent->right = subtree;            // Right child of parent.
+
+    return temp;
 }
 
 // BST.inOrder()
