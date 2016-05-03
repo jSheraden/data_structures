@@ -6,7 +6,10 @@
 // Date: May 3, 2016
 #include <iostream>
 #include <iomanip>
-#include "BST.hpp"
+#include <new>
+#include "BST.cpp"  // Included .cpp file instead of .hpp, turns out
+                    // C++ doesn't allow template classes to be
+                    // imported from multiple files.
 
 int main()
 {

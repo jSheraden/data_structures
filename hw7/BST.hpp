@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
+#include <new>
 
 template <typename DataType>
 class BST
