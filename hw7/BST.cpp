@@ -127,7 +127,7 @@ inline void BST<DataType>::inOrder( std::ostream &out ) const
 
 // BST.graph()
 template <typename DataType>
-inline void BST<DataType>::graph( std::ostream &out ) const
+void BST<DataType>::graph( std::ostream &out ) const
 {
 
 }
@@ -141,9 +141,14 @@ inline void BST<DataType>::search2( const DataType &item, bool &found, BinNodePo
 
 // BST.inOrderAux()
 template <typename DataType>
-inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subTreePtr ) const
+inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subtreePtr ) const
 {
-
+    if ( subtreePtr != 0 )
+    {
+        inOrderAux( out, subtreePtr->left );   // Left operation.
+        out << subtreePtr->data << " ";        // V operation.
+        inOrderAux( out, subtreePtr>right );  // Right operation.
+    }
 }
 
 // BST.graphAux()

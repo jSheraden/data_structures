@@ -30,7 +30,7 @@ class BST
 
         // Private function members.
         void search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const;
-        void inOrderAux( std::ostream &out, BinNodePointer subTreePtr ) const;
+        void inOrderAux( std::ostream &out, BinNodePointer subtreePtr ) const;
         void graphAux( std::ostream &out, int indent, BinNodePointer subTreeRoot ) const;
 
         // Private data members.
