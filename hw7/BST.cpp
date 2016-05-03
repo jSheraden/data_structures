@@ -13,9 +13,20 @@ inline bool BST<DataType>::empty() const
 
 // BST.search()
 template <typename DataType>
-inline bool BST<DataType>::search( const DataType &item ) const
+bool BST<DataType>::search( const DataType &item ) const
 {
+    BinNodePointer locPtr = myRoot;
+    bool found = false;
 
+    while ( !found && !locPtr = 0 )
+    {
+        if ( item < locPtr->data )
+            locPtr = locPtr->left;
+        else if ( locPtr->data < item )
+            locPtr = locPtr->right;
+        else
+            found = true;
+    }
 }
 
 // BST.insert()
