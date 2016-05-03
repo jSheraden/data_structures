@@ -129,7 +129,7 @@ inline void BST<DataType>::inOrder( std::ostream &out ) const
 template <typename DataType>
 void BST<DataType>::graph( std::ostream &out ) const
 {
-
+    graphAux( out, 0, myRoot );
 }
 
 // BST.search2()
