@@ -97,7 +97,7 @@ void processMenuSelection( char &choice, BST<int> &bst )
                 std::cout << "\nEnter an integer: ";
                 std::cin  >> searchItem;
 
-                std::cout << ( bst.search( searchItem ) ? "\nThat value is in the list" : "\nThat value is not in the list" ) << std::endl;
+                std::cout << ( bst.search( searchItem ) ? "\nThat value is in the tree." : "\nThat value is not in the tree." ) << std::endl;
             }
             break;
         case 'Q':
