@@ -180,3 +180,35 @@ void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subt
         graphAux( out, indent + 8, subtreeRoot->left );
     }
 }
+
+// BST.height() - returns the height of the binary search tree
+// from myRoot to the deepest node.
+template <typename DataType>
+int BST<DataType>::height()
+{
+    BinNodePointer ptr = myRoot;
+    return findHeight( ptr );
+}
+
+// BST.leafCount() - returns the total number of nodes in the
+// binary search tree.
+template <typename DataType>
+int BST<DataType>::leafCount()
+{
+    BinNodePointer ptr = myRoot;
+    return findLeafCount( ptr );
+}
+
+// BST.findHeight()
+template <typename DataType>
+int BST<DataType>::findHeight( BinNodePointer ptr )
+{
+
+}
+
+// BST.findLeafCount()
+template <typename DataType>
+int BST<DataType>::findLeafCount( BinNodePointer ptr )
+{
+
+}
