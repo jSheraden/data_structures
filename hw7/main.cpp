@@ -39,8 +39,6 @@ int main()
         processMenuSelection( userChoice, bst );
     }
 
-    std::cout << std::endl;
-
     return 0;
 }
 
@@ -99,9 +97,6 @@ void processMenuSelection( char &choice, BST<int> &bst )
 
                 std::cout << ( bst.search( searchItem ) ? "\nThat value is in the tree." : "\nThat value is not in the tree." ) << std::endl;
             }
-            break;
-        case 'Q':
-            std::cout << std::endl;
             break;
     }
 }

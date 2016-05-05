@@ -18,7 +18,7 @@ bool BST<DataType>::search( const DataType &item ) const
     BinNodePointer locPtr = myRoot;
     bool found = false;
 
-    while ( !found && !locPtr = 0 )
+    while ( !found && locPtr != 0 )
     {
         if ( item < locPtr->data )      // Descend left.
             locPtr = locPtr->left;

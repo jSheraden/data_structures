@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-std=c++11" />
 		</Compiler>
+		<Unit filename="BST.cpp" />
 		<Unit filename="BST.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
