@@ -33,6 +33,8 @@ class BST
         void search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const;
         void inOrderAux( std::ostream &out, BinNodePointer subtreePtr ) const;
         void graphAux( std::ostream &out, int indent, BinNodePointer subtreeRoot ) const;
+        int findHeight();
+        int findLeafCount();
 
         // Private data members.
         BinNodePointer myRoot;
@@ -45,6 +47,8 @@ class BST
         void remove( const DataType &item );
         void inOrder( std::ostream &out ) const;
         void graph( std::ostream &out ) const;
+        int height();
+        int leafCount();
 };
 
 #endif
