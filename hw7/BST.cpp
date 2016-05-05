@@ -218,5 +218,11 @@ int BST<DataType>::findHeight( BinNodePointer ptr )
 template <typename DataType>
 int BST<DataType>::findLeafCount( BinNodePointer ptr )
 {
-
+    if ( ptr == 0 )
+        return 0;
+    else
+        if ( ptr->left == 0 && ptr->right == 0 )
+            return 1;
+        else
+            return 1 + findLeafCount( ptr->left ) + findLeafCount( ptr->right );
 }
