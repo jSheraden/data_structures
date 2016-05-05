@@ -203,7 +203,15 @@ int BST<DataType>::leafCount()
 template <typename DataType>
 int BST<DataType>::findHeight( BinNodePointer ptr )
 {
+    if ( ptr == 0 ) return -1;
 
+    int leftHeight = findHeight( ptr->left );
+    int rightHeight = findHeight( ptr->right );
+
+    if ( leftHeight > rightHeight )
+        return leftHeight + 1;
+    else
+        return rightHeight + 1;
 }
 
 // BST.findLeafCount()
