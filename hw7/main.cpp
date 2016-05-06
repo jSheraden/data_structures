@@ -11,6 +11,14 @@
                     // C++ doesn't allow template classes to be
                     // imported from multiple files.
 
+// Stackoverflow helped a lot with the height() and findHeight()
+// member functions of the BST class.
+// http://stackoverflow.com/questions/2597637/finding-height-in-binary-search-tree
+
+// I found the site Encrypted3D to be very helpful with implementing
+// the leafCount() and findLeafCount() member functions.
+// https://encrypt3d.wordpress.com/2010/09/29/how-to-count-number-of-nodes-in-a-binary-search-tree/
+
 // Function prototypes.
 void displayMenuOptions();
 void processMenuSelection( char &choice, BST<int> &bst );
@@ -48,9 +56,12 @@ void displayMenuOptions()
     std::cout << "\n-------------------------"
         << "\nSelect an option from the menu below:\n"
         << "\nD. Display the binary search tree."
-        << "\nI. Insert a value into the tree."
+        << "\nE. Check if the tree is empty or not."
         << "\nH. Get the height of the binary search tree."
-        << "\nL. Get the leaf count of the binary search tree."
+        << "\nI. Insert a value into the tree."
+        << "\nN. Get the total number of nodes in the tree."
+        << "\nO. Display every value in the tree in ascending order."
+        << "\nR. Remove a value from the binary search tree."
         << "\nS. Search for a specific value in the tree."
         << "\nQ. Quit";
 }
@@ -63,9 +74,22 @@ void processMenuSelection( char &choice, BST<int> &bst )
     // the user.
     switch ( choice )
     {
+        // Option D.
         case 'D':
             bst.graph( std::cout );
             break;
+
+        // Option E.
+        case 'E':
+            std::cout << ( bst.empty() ? "\nThe tree is empty." : "\nThe tree is not empty." ) << std::endl;
+            break;
+
+        // Option H.
+        case 'H':
+            std::cout << "\nThe height of the binary search tree is " << bst.height() << " nodes." << std::endl;
+            break;
+
+        // Option I.
         case 'I':
             {
                 int val;
@@ -80,12 +104,36 @@ void processMenuSelection( char &choice, BST<int> &bst )
                 std::cout << "\nThe value " << val << " has been inserted into the tree." << std::endl;
             }
             break;
-        case 'H':
-            std::cout << "\nThe height of the binary search tree is " << bst.height() << " nodes." << std::endl;
-            break;
-        case 'L':
+
+        // Option N.
+        case 'N':
             std::cout << "\nThe total number of nodes in the tree is " << bst.leafCount() << "." << std::endl;
             break;
+
+        // Option O.
+        case 'O':
+            {
+                std::cout << "\nValues in the tree: ";
+                bst.inOrder( std::cout );
+                std::cout << std::endl;
+            }
+            break;
+
+        // Option R.
+        case 'R':
+            {
+                int removeVal;
+
+                std::cout << "\nEnter a value to be removed from the tree: ";
+                std::cin  >> removeVal;
+
+                bst.remove( removeVal );
+
+                std::cout << "\nThe value " << removeVal << " has been removed from the tree." << std::endl;
+            }
+            break;
+
+        // Option S.
         case 'S':
             {
                 int searchItem;
@@ -97,6 +145,18 @@ void processMenuSelection( char &choice, BST<int> &bst )
 
                 std::cout << ( bst.search( searchItem ) ? "\nThat value is in the tree." : "\nThat value is not in the tree." ) << std::endl;
             }
+            break;
+
+        // If the user chooses to quit, nothing
+        // needs to be done here.
+        case 'Q':
+            break;
+
+        // If the user enters an invalid option,
+        // prompt the user to enter a valid
+        // option.
+        default:
+            std::cout << "\nEnter a valid option." << std::endl;
             break;
     }
 }

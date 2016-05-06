@@ -4,14 +4,16 @@
 template <typename DataType>
 inline BST<DataType>::BST() : myRoot( 0 ) {}
 
-// BST.empty()
+// BST.empty() - determine if the binary search tree
+// is empty or not.
 template <typename DataType>
 inline bool BST<DataType>::empty() const
 {
     return ( myRoot == 0 );
 }
 
-// BST.search()
+// BST.search() - determine if a specific value is in
+// the binary search tree.
 template <typename DataType>
 bool BST<DataType>::search( const DataType &item ) const
 {
@@ -31,7 +33,7 @@ bool BST<DataType>::search( const DataType &item ) const
     return found;
 }
 
-// BST.insert()
+// BST.insert() - insert a value into the binary search tree.
 template <typename DataType>
 void BST<DataType>::insert( const DataType &item )
 {
@@ -67,7 +69,7 @@ void BST<DataType>::insert( const DataType &item )
         std::cout << "Item already in tree." << std::endl;
 }
 
-// BST.remove()
+// BST.remove() - remove a node from the binary search tree.
 template <typename DataType>
 void BST<DataType>::remove( const DataType &item )
 {
@@ -115,24 +117,27 @@ void BST<DataType>::remove( const DataType &item )
     else
         parent->right = subtree;            // Right child of parent.
 
-    return temp;
+    delete temp;
 }
 
-// BST.inOrder()
+// BST.inOrder() - calls the inOrderAux() function
+// to display the nodes in the tree.
 template <typename DataType>
 inline void BST<DataType>::inOrder( std::ostream &out ) const
 {
     inOrderAux( out, myRoot );
 }
 
-// BST.graph()
+// BST.graph() - calls the graphAux() function to display
+// the binary search tree.
 template <typename DataType>
 inline void BST<DataType>::graph( std::ostream &out ) const
 {
     graphAux( out, 0, myRoot );
 }
 
-// BST.search2()
+// BST.search2() - search for a specific value in the
+// binary search tree.
 template <typename DataType>
 void BST<DataType>::search2( const DataType &item, bool &found, BinNodePointer &locPtr, BinNodePointer &parent ) const
 {
@@ -157,7 +162,8 @@ void BST<DataType>::search2( const DataType &item, bool &found, BinNodePointer &
     }
 }
 
-// BST.inOrderAux()
+// BST.inOrderAux() - print every value in the binary
+// search tree in ascending order.
 template <typename DataType>
 inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subtreePtr ) const
 {
@@ -169,7 +175,7 @@ inline void BST<DataType>::inOrderAux( std::ostream &out, BinNodePointer subtree
     }
 }
 
-// BST.graphAux()
+// BST.graphAux() - print the binary search tree.
 template <typename DataType>
 void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subtreeRoot ) const
 {
@@ -181,8 +187,8 @@ void BST<DataType>::graphAux( std::ostream &out, int indent, BinNodePointer subt
     }
 }
 
-// BST.height() - returns the height of the binary search tree
-// from myRoot to the deepest node.
+// BST.height() - calls the findHeight() function
+// to get the height of the tree.
 template <typename DataType>
 int BST<DataType>::height()
 {
@@ -190,8 +196,8 @@ int BST<DataType>::height()
     return findHeight( ptr );
 }
 
-// BST.leafCount() - returns the total number of nodes in the
-// binary search tree.
+// BST.leafCount() - calls the findLeafCount() function
+// to get the total number of nodes in the tree.
 template <typename DataType>
 int BST<DataType>::leafCount()
 {
@@ -199,7 +205,8 @@ int BST<DataType>::leafCount()
     return findLeafCount( ptr );
 }
 
-// BST.findHeight()
+// BST.findHeight() - returns the height of the binary search tree
+// from myRoot to the deepest node.
 template <typename DataType>
 int BST<DataType>::findHeight( BinNodePointer ptr )
 {
@@ -214,7 +221,8 @@ int BST<DataType>::findHeight( BinNodePointer ptr )
         return rightHeight + 1;
 }
 
-// BST.findLeafCount()
+// BST.findLeafCount() - returns the total number of nodes in the
+// binary search tree.
 template <typename DataType>
 int BST<DataType>::findLeafCount( BinNodePointer ptr )
 {
