@@ -92,16 +92,16 @@ void processMenuSelection( char &choice, BST<int> &bst )
         // Option I.
         case 'I':
             {
-                int val;
+                int insertVal;
 
                 // Get a value from the user to be
                 // inserted into the tree.
                 std::cout << "\nEnter an integer: ";
-                std::cin  >> val;
+                std::cin  >> insertVal;
 
-                bst.insert( val );
+                bst.insert( insertVal );
 
-                std::cout << "\nThe value " << val << " has been inserted into the tree." << std::endl;
+                std::cout << "\nThe value " << insertVal << " has been inserted into the tree." << std::endl;
             }
             break;
 
