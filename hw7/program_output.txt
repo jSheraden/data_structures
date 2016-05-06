@@ -1,0 +1,335 @@
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: h
+
+The height of the binary search tree is 2 nodes.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: 1
+
+The value 1 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: 9
+
+The value 9 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: 11
+
+The value 11 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: -1
+
+The value -1 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: d
+                        11
+                9
+        7
+                6
+ 5
+                4
+        3
+                1
+                        -1
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: o
+
+Values in the tree: -1 1 3 4 5 6 7 9 11
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: n
+
+The total number of nodes in the tree is 9.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: s
+
+Enter an integer: 4
+
+That value is in the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: 12
+
+The value 12 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: i
+
+Enter an integer: -2
+
+The value -2 has been inserted into the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: d
+                                12
+                        11
+                9
+        7
+                6
+ 5
+                4
+        3
+                1
+                        -1
+                                -2
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: s
+
+Enter an integer: -3
+
+That value is not in the tree.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: o
+
+Values in the tree: -2 -1 1 3 4 5 6 7 9 11 12
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: h
+
+The height of the binary search tree is 4 nodes.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: q
+
+Process returned 0 (0x0)   execution time : 153.701 s
+Press any key to continue.
+
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: e
+
+The tree is empty.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the binary search tree.
+E. Check if the tree is empty or not.
+H. Get the height of the binary search tree.
+I. Insert a value into the tree.
+N. Get the total number of nodes in the tree.
+O. Display every value in the tree in ascending order.
+R. Remove a value from the binary search tree.
+S. Search for a specific value in the tree.
+Q. Quit
+
+Enter your choice: q
+
+Process returned 0 (0x0)   execution time : 4.786 s
+Press any key to continue.
