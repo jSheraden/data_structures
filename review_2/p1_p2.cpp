@@ -11,8 +11,8 @@ class Node
 int main()
 {
     Node *p1, *p2;
-    p1 = new( nothrow ) Node;
-    p2 = new( nothrow ) Node;
+    p1 = new( std::nothrow ) Node;
+    p2 = new( std::nothrow ) Node;
 
     p1->data = 12;
     p2->data = 34;
