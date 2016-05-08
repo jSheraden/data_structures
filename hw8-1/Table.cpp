@@ -24,7 +24,26 @@ void Table::findIndex( int key, bool &found, int &i ) const
 // Table.insert()
 void Table::insert( const RecordType &entry )
 {
+    bool alreadyThere;
+    int index;
 
+    assert( entry.key >= 0 );
+
+    findIndex( entry.key, alreadyThere, index );
+
+    if ( alreadyThere )
+        table[index] = entry;
+    else
+    {
+        assert( size() < CAPACITY );
+        index = hash( entry.key );
+
+        while ( table[index].key != -1 )
+            index = ( index + 1 ) % CAPACITY;
+
+        table[index] = entry;
+        used++;
+    }
 }
 
 // Table.find()
