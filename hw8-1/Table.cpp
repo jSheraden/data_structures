@@ -18,7 +18,18 @@ int Table::hash( int key ) const
 // Table.findIndex()
 void Table::findIndex( int key, bool &found, int &i ) const
 {
+    int count = 0;
 
+    assert( key >= 0 );
+
+    i = hash( key );
+    while ( count < CAPACITY && table[i].key != -1 && table[i].key != key )
+    {
+        count++;
+        i = ( i + 1 ) % CAPACITY;
+    }
+
+    found = ( table[i].key == key );
 }
 
 // Table.insert()
