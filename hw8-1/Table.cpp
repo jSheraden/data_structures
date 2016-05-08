@@ -13,7 +13,7 @@ int Table::hash( int key ) const
 }
 
 // Table.findIndex()
-void findIndex( int key, bool &found, int &i ) const
+void Table::findIndex( int key, bool &found, int &i ) const
 {
 
 }
@@ -25,7 +25,7 @@ void Table::insert( const RecordType &entry )
 }
 
 // Table.find()
-bool Table::find( int key, bool &found, RecordType &result ) const
+void Table::find( int key, bool &found, RecordType &result ) const
 {
 
 }
