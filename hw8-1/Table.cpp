@@ -49,7 +49,14 @@ void Table::insert( const RecordType &entry )
 // Table.find()
 void Table::find( int key, bool &found, RecordType &result ) const
 {
+    int index;
 
+    assert( key >= 0 );
+
+    findIndex( key, found, index );
+
+    if ( found )
+        result = table[index];
 }
 
 // Table.size()
