@@ -1,6 +1,10 @@
 #ifndef TABLE_HPP
 #define TABLE_HPP
 
+#include <iostream>
+#include <cassert>
+#include <iomanip>
+
 typedef int ItemType;
 const int CAPACITY = 31;
 
