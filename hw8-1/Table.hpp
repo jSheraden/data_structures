@@ -31,7 +31,7 @@ class Table
         void find( int key, bool &found, RecordType &result ) const;
         int size() const;
         void display() const;
-        void remove( int key );
+        void erase( int key );
 };
 
 #endif

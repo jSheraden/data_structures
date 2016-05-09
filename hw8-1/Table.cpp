@@ -98,17 +98,23 @@ void Table::display() const
     }
 }
 
-// Table.remove() - remove an item from
+// Table.erase() - remove an item from
 // the hash table.
-void Table::remove( int key )
+// Preconditions: ensure that key is greater
+// than 0 and less than 31.
+// Postconditions: the record at the given key
+// has been removed from the table. If there
+// is no record at the given key, the table
+// remains unchanged.
+void Table::erase( int key )
 {
     if ( key < 0 || key > 31 )
         std::cout << "\nThat value is not in the table." << std::endl;
     else
     {
-        RecordType reset;
-        reset.key = -1;
-        reset.data = 0;
-        table[key] = reset;
+        RecordType emptyRec;
+        emptyRec.key = -1;
+        emptyRec.data = 0;
+        table[key] = emptyRec;
     }
 }

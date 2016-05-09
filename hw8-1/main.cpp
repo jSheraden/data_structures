@@ -120,7 +120,7 @@ void processMenuSelection( char &choice, Table &table )
                 std::cin  >> key;
 
                 // Remove the record at the given key.
-                table.remove( key );
+                table.erase( key );
             }
             break;
 
@@ -131,7 +131,7 @@ void processMenuSelection( char &choice, Table &table )
 
         // Option Q.
         case 'Q':
-            std::cout << "\nGoodbye..." << std::endl;
+            std::cout << "\nExiting..." << std::endl;
             break;
     }
 }
