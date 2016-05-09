@@ -9,13 +9,15 @@ Table::Table()
         table[i].key = -1;
 }
 
-// Table.hash()
+// Table.hash() - this function is used to determine
+// the table array index of a given key.
 int Table::hash( int key ) const
 {
     return key % CAPACITY;
 }
 
-// Table.findIndex()
+// Table.findIndex() - find the index if a given value
+// in the hash table.
 void Table::findIndex( int key, bool &found, int &i ) const
 {
     int count = 0;
@@ -32,7 +34,7 @@ void Table::findIndex( int key, bool &found, int &i ) const
     found = ( table[i].key == key );
 }
 
-// Table.insert()
+// Table.insert() - insert a value into the hash table.
 void Table::insert( const RecordType &entry )
 {
     bool alreadyThere;
@@ -57,7 +59,9 @@ void Table::insert( const RecordType &entry )
     }
 }
 
-// Table.find()
+// Table.find() - determine if the record at a
+// given key in the table has been assigned a
+// data value.
 void Table::find( int key, bool &found, RecordType &result ) const
 {
     int index;
@@ -70,8 +74,41 @@ void Table::find( int key, bool &found, RecordType &result ) const
         result = table[index];
 }
 
-// Table.size()
+// Table.size() - returns the number of items
+// currently in the hash table.
 int Table::size() const
 {
     return used;
+}
+
+// Table.display() - displays the hash table.
+void Table::display() const
+{
+    std::cout << "\nThe hash table is: " << std::endl;
+    std::cout << "\nIndex  Key    Data" << std::endl;
+
+    for ( int i = 0; i < CAPACITY; i++ )
+    {
+        std::cout << std::setw( 5 ) << i << std::setw( 5 ) << table[i].key;
+
+        if ( table[i].key != -1 )
+            std::cout << std::setw( 8 ) << table[i].data;
+
+        std::cout << std::endl;
+    }
+}
+
+// Table.remove() - remove an item from
+// the hash table.
+void Table::remove( int key )
+{
+    if ( key < 0 || key > 31 )
+        std::cout << "\nThat value is not in the table." << std::endl;
+    else
+    {
+        RecordType reset;
+        reset.key = -1;
+        reset.data = 0;
+        table[key] = reset;
+    }
 }

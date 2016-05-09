@@ -30,6 +30,8 @@ class Table
         void insert( const RecordType &entry );
         void find( int key, bool &found, RecordType &result ) const;
         int size() const;
+        void display() const;
+        void remove( int key );
 };
 
 #endif
