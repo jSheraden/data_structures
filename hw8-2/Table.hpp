@@ -2,6 +2,7 @@
 #define TABLE_HPP
 
 #include <iostream>
+#include <cstdlib>
 #include <cassert>
 #include <iomanip>
 
@@ -29,7 +30,7 @@ class Table
         void findPtr( int key, bool &found, Node *&ptr ) const;
 
         // Data members.
-        Node table[CAPACITY];
+        Node *table[CAPACITY];
         int used;
     public:
         Table();

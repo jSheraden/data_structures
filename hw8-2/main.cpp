@@ -5,6 +5,7 @@
 // Instructor: Bob Comer
 // Date: May 9, 2016
 #include <iostream>
+#include <cstdlib>
 #include <cassert>
 #include <iomanip>
 #include "Table.hpp"

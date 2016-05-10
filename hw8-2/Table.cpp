@@ -16,7 +16,7 @@ int Table::hash( int key ) const
 }
 
 // Table.findPtr()
-void Table::findPtr( int key, bool &found, Node *&ptr ) const
+void Table::findPtr( int key, bool &found, Node *&nodePtr ) const
 {
     int i;
     Node *ptr;
@@ -93,7 +93,21 @@ int Table::size() const
 // Table.display()
 void Table::display() const
 {
+    std::cout << "\nThe hash table is: " << std::endl;
+    std::cout << "\nIndex  Key    Data" << std::endl;
 
+    for ( int i = 0; i < CAPACITY; i++ )
+    {
+        if ( table[i] != 0 )
+        {
+            std::cout << std::setw( 5 ) << i << std::setw( 5 ) << table[i]->rec.key;
+
+            if ( table[i]->rec.key != 0 )
+                std::cout << std::setw( 8 ) << table[i]->rec.data;
+
+            std::cout << std::endl;
+        }
+    }
 }
 
 // Table.erase()

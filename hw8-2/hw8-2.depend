@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1462836843 source:c:\cpp\data_structures\hw8-2\main.cpp
+	<iostream>
+	<cstdlib>
+	<cassert>
+	<iomanip>
+	"Table.hpp"
+
+1462837008 c:\cpp\data_structures\hw8-2\table.hpp
+	<iostream>
+	<cstdlib>
+	<cassert>
+	<iomanip>
+
+1462838093 source:c:\cpp\data_structures\hw8-2\table.cpp
+	"Table.hpp"
+
