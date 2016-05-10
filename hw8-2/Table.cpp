@@ -113,5 +113,12 @@ void Table::display() const
 // Table.erase()
 void Table::erase( int key )
 {
-
+    if ( key < 0 || key > 31 )
+        std::cout << "\nThat value is not in the table." << std::endl;
+    else
+    {
+        Node *emptyRec = NULL;
+        table[key] = emptyRec;
+        used--;
+    }
 }
