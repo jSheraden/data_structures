@@ -9,13 +9,15 @@ Table::Table()
         table[i] = NULL;
 }
 
-// Table.hash()
+// Table.hash() - this function is used to determine
+// the table array index of a given key.
 int Table::hash( int key ) const
 {
     return key % CAPACITY;
 }
 
-// Table.findPtr()
+// Table.findIndex() - find the index if a given value
+// in the hash table.
 void Table::findPtr( int key, bool &found, Node *&nodePtr ) const
 {
     int i;
@@ -40,7 +42,7 @@ void Table::findPtr( int key, bool &found, Node *&nodePtr ) const
         nodePtr = NULL;
 }
 
-// Table.insert()
+// Table.insert() - insert a record into the hash table.
 void Table::insert( const RecordType &entry )
 {
     bool alreadyThere;
@@ -71,7 +73,9 @@ void Table::insert( const RecordType &entry )
     }
 }
 
-// Table.find()
+// Table.find() - determine if the record at a
+// given key in the table has been assigned a
+// data value.
 void Table::find( int key, bool &found, RecordType &result ) const
 {
     Node *nodePtr;
@@ -84,13 +88,14 @@ void Table::find( int key, bool &found, RecordType &result ) const
         result = nodePtr->rec;
 }
 
-// Table.size()
+// Table.size() - returns the number of items
+// currently in the hash table.
 int Table::size() const
 {
     return used;
 }
 
-// Table.display()
+// Table.display() - display the hash table.
 void Table::display() const
 {
     std::cout << "\nThe hash table is: " << std::endl;
@@ -102,7 +107,7 @@ void Table::display() const
         {
             std::cout << std::setw( 5 ) << i << std::setw( 5 ) << table[i]->rec.key;
 
-            if ( table[i]->rec.key != 0 )
+            if ( table[i]->rec.key >= 0 )
                 std::cout << std::setw( 8 ) << table[i]->rec.data;
 
             std::cout << std::endl;
@@ -110,7 +115,14 @@ void Table::display() const
     }
 }
 
-// Table.erase()
+// Table.erase() - remove an item from
+// the hash table.
+// Preconditions: ensure that key is greater
+// than 0 and less than 31.
+// Postconditions: the record at the given key
+// has been removed from the table. If there
+// is no record at the given key, the table
+// remains unchanged.
 void Table::erase( int key )
 {
     if ( key < 0 || key > 31 )

@@ -1,0 +1,257 @@
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 0
+Enter data (int) for record: 5
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: d
+
+The hash table is:
+
+Index  Key    Data
+    0    0       5
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: q
+
+Exiting...
+
+Process returned 0 (0x0)   execution time : 8.570 s
+Press any key to continue.
+
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 1
+Enter data (int) for record: 5
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 3
+Enter data (int) for record: 7
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 0
+Enter data (int) for record: -1
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 8
+Enter data (int) for record: 92
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: i
+
+Enter key (int >= 0) for record: 4
+Enter data (int) for record: 101
+
+The record has been entered into the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: d
+
+The hash table is:
+
+Index  Key    Data
+    0    0      -1
+    1    1       5
+    3    3       7
+    4    4     101
+    8    8      92
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: s
+
+There are 5 record(s) in the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: f
+
+Enter key (int >= 0) to search for: 1
+
+Record was found.
+    Key         =        1
+    Data        =        5
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: s
+
+There are 5 record(s) in the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: r
+
+Enter the key of the record to be removed: 0
+
+The record at key 0 has been removed from the table.
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: d
+
+The hash table is:
+
+Index  Key    Data
+    1    1       5
+    3    3       7
+    4    4     101
+    8    8      92
+
+-------------------------
+Select an option from the menu below:
+
+D. Display the hash table.
+I. Insert a new record or update an existing record.
+F. Find a record.
+R. Delete a record from the hash table.
+S. Get the number of records.
+Q. Quit.
+
+Enter an option: q
+
+Exiting...
+
+Process returned 0 (0x0)   execution time : 119.996 s
+Press any key to continue.
