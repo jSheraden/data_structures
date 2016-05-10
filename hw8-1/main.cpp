@@ -121,6 +121,8 @@ void processMenuSelection( char &choice, Table &table )
 
                 // Remove the record at the given key.
                 table.erase( key );
+
+                std::cout << "\nThe record at key " << key << " has been removed from the table." << std::endl;
             }
             break;
 
