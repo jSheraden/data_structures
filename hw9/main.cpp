@@ -1,3 +1,9 @@
+// Name: Joseph Sheraden
+// Project Number: 9
+// Project Description: Heaps
+// Course: Data Structures
+// Instructor: Bob Comer
+// Date: May 12, 2016
 #include <iostream>
 #include <cmath>
 
@@ -10,9 +16,9 @@ void percolateDown( int *arr, int start, int end );
 // The main function.
 int main()
 {
-    int *myArr;
-    int size;
-    bool quit = false;
+    int *myArr;         // An array of integers to be allocated dynamically.
+    int size;           // Holds the length of the array.
+    bool quit = false;  // Program loop qualifier.
 
     // Prompt the user for input until
     // the user decides to quit.
@@ -61,7 +67,7 @@ int main()
 // program.
 bool getUserChoice()
 {
-    char choice;
+    char choice;    // Holds the user's menu selection.
 
     std::cout << "\nDo you want to enter another array? (Y/N) ";
     std::cin  >> choice;
@@ -106,6 +112,9 @@ void heapSort( int *arr, int size )
     int temp;
     int end = size - 1;
 
+    // While the array is not empty, swap the
+    // first and last elements in the array
+    // and reorganize the elements.
     while ( end > 0 )
     {
         temp = arr[0];
@@ -117,15 +126,14 @@ void heapSort( int *arr, int size )
     }
 }
 
-// percolateDown()
+// percolateDown() - reorganizes the array after each
+// iteration in the heapSort() function.
 void percolateDown( int *arr, int start, int end )
 {
-    int root = start;
-
-    while ( ( 2 * root ) + 1 <= end )
+    while ( ( 2 * start ) + 1 <= end )
     {
-        int child = ( 2 * root ) + 1;
-        int swap = root;
+        int child = ( 2 * start ) + 1;
+        int swap = start;
 
         if ( arr[swap] < arr[child] )
             swap = child;
@@ -133,15 +141,15 @@ void percolateDown( int *arr, int start, int end )
         if ( child + 1 <= end && arr[swap] < arr[child + 1] )
             swap = child + 1;
 
-        if ( swap == root )
+        if ( swap == start )
             return;
         else
         {
-            int temp = arr[root];
-            arr[root] = arr[swap];
+            int temp = arr[start];
+            arr[start] = arr[swap];
             arr[swap] = temp;
 
-            root = swap;
+            start = swap;
         }
     }
 }
