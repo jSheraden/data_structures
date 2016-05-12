@@ -7,6 +7,9 @@
 #include <iostream>
 #include <cmath>
 
+// Wikipedia helped a lot with this assignment.
+// https://en.wikipedia.org/wiki/Heapsort
+
 // Function prototypes.
 bool getUserChoice();
 void heapify( int *arr, int size );
@@ -87,13 +90,16 @@ bool getUserChoice()
     if ( choice == 'N' )
         return true;
     else
-        std::cout << std::endl;   // Print a line for neatness before exiting.
+        // Print a line for neatness before exiting.
+        std::cout << std::endl;
 }
 
 // heapify() - accepts an array of integers as
 // an argument and turns it into a heap.
 void heapify( int *arr, int size )
 {
+    // The equation (size - 2) / 2 gives you
+    // the parent of size.
     int start = floor( ( size - 2 ) / 2 );
 
     while ( start >= 0 )
@@ -107,14 +113,16 @@ void heapify( int *arr, int size )
 // its size as arguments and sorts the array.
 void heapSort( int *arr, int size )
 {
+    // Convert the array into a heap before
+    // sorting it.
     heapify( arr, size );
 
     int temp;
     int end = size - 1;
 
-    // While the array is not empty, swap the
-    // first and last elements in the array
-    // and reorganize the elements.
+    // While the heap is not empty, swap the
+    // first and last elements in the and
+    // reorganize the heap.
     while ( end > 0 )
     {
         temp = arr[0];
@@ -127,9 +135,11 @@ void heapSort( int *arr, int size )
 }
 
 // percolateDown() - reorganizes the array after each
-// iteration in the heapSort() function.
+// while loop iteration in the heapSort() function.
 void percolateDown( int *arr, int start, int end )
 {
+    // The equation (2 * start) + 1 gives you the
+    // left child of start.
     while ( ( 2 * start ) + 1 <= end )
     {
         int child = ( 2 * start ) + 1;
@@ -145,6 +155,8 @@ void percolateDown( int *arr, int start, int end )
             return;
         else
         {
+            // Swap the elements at arr[start]
+            // and arr[swap].
             int temp = arr[start];
             arr[start] = arr[swap];
             arr[swap] = temp;
