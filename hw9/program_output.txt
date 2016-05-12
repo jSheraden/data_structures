@@ -92,3 +92,54 @@ Do you want to enter another array? (Y/N) n
 
 Process returned 0 (0x0)   execution time : 167.518 s
 Press any key to continue.
+
+Enter the size of the array: 7
+
+Enter integer #1: 10
+
+Enter integer #2: 1000
+
+Enter integer #3: -100
+
+Enter integer #4: 100
+
+Enter integer #5: -10
+
+Enter integer #6: -1000
+
+Enter integer #7: 0
+
+Sorted heap: -1000 -100 -10 0 10 100 1000
+
+Do you want to enter another array? (Y/N) y
+
+Enter the size of the array: 11
+
+Enter integer #1: 2
+
+Enter integer #2: 7
+
+Enter integer #3: 4
+
+Enter integer #4: 8
+
+Enter integer #5: 6
+
+Enter integer #6: 5
+
+Enter integer #7: 1
+
+Enter integer #8: 3
+
+Enter integer #9: 9
+
+Enter integer #10: 0
+
+Enter integer #11: 10
+
+Sorted heap: 0 1 2 3 4 5 6 7 8 9 10
+
+Do you want to enter another array? (Y/N) n
+
+Process returned 0 (0x0)   execution time : 94.952 s
+Press any key to continue.
