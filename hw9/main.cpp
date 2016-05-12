@@ -46,7 +46,7 @@ int main()
         heapify( myArr, size );
         heapSort( myArr, size );
 
-        std::cout << std::endl;
+        std::cout << "\nSorted heap: ";
 
         // Display the array.
         for ( int i = 0; i < size; i++ )
@@ -60,6 +60,9 @@ int main()
         // Deallocate the memory held by the
         // dynamic array.
         delete myArr;
+
+        // Print another line for neatness before reiterating.
+        std::cout << ( quit ? "" : "\n" );
     }
 
     return 0;   // Exit the program.
@@ -87,11 +90,7 @@ bool getUserChoice()
     }
 
     // If the user wants to quit, exit the loop.
-    if ( choice == 'N' )
-        return true;
-    else
-        // Print a line for neatness before exiting.
-        std::cout << std::endl;
+    return ( choice == 'N' );
 }
 
 // heapify() - accepts an array of integers as
@@ -109,8 +108,8 @@ void heapify( int *arr, int size )
     }
 }
 
-// heapSort() - accepts an array of integers and
-// its size as arguments and sorts the array.
+// heapSort() - accepts a heap of integers and
+// its size as arguments and sorts the heap.
 void heapSort( int *arr, int size )
 {
     // Convert the array into a heap before
@@ -118,7 +117,7 @@ void heapSort( int *arr, int size )
     heapify( arr, size );
 
     int temp;
-    int end = size - 1;
+    int end = size - 1; // Index of the last element in the heap.
 
     // While the heap is not empty, swap the
     // first and last elements in the and

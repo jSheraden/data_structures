@@ -1,0 +1,94 @@
+Enter the size of the array: 3
+
+Enter integer #1: 2
+
+Enter integer #2: 3
+
+Enter integer #3: 1
+
+Sorted heap: 1 2 3
+
+Do you want to enter another array? (Y/N) y
+
+Enter the size of the array: 5
+
+Enter integer #1: -11
+
+Enter integer #2: -20
+
+Enter integer #3: 1
+
+Enter integer #4: 0
+
+Enter integer #5: 5
+
+Sorted heap: -20 -11 0 1 5
+
+Do you want to enter another array? (Y/N) y
+
+Enter the size of the array: 7
+
+Enter integer #1: 4
+
+Enter integer #2: 2
+
+Enter integer #3: 5
+
+Enter integer #4: 3
+
+Enter integer #5: 6
+
+Enter integer #6: 7
+
+Enter integer #7: 1
+
+Sorted heap: 1 2 3 4 5 6 7
+
+Do you want to enter another array? (Y/N) y
+
+Enter the size of the array: 5
+
+Enter integer #1: -3
+
+Enter integer #2: -2
+
+Enter integer #3: -4
+
+Enter integer #4: -1
+
+Enter integer #5: -5
+
+Sorted heap: -5 -4 -3 -2 -1
+
+Do you want to enter another array? (Y/N) y
+
+Enter the size of the array: 11
+
+Enter integer #1: 4
+
+Enter integer #2: -2
+
+Enter integer #3: 5
+
+Enter integer #4: -3
+
+Enter integer #5: 3
+
+Enter integer #6: -1
+
+Enter integer #7: 0
+
+Enter integer #8: 2
+
+Enter integer #9: -5
+
+Enter integer #10: 1
+
+Enter integer #11: -4
+
+Sorted heap: -5 -4 -3 -2 -1 0 1 2 3 4 5
+
+Do you want to enter another array? (Y/N) n
+
+Process returned 0 (0x0)   execution time : 167.518 s
+Press any key to continue.
