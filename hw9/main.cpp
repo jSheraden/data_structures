@@ -133,7 +133,7 @@ void heapSort( int *arr, int size )
     }
 }
 
-// percolateDown() - reorganizes the array after each
+// percolateDown() - reorganizes the heap after each
 // while loop iteration in the heapSort() function.
 void percolateDown( int *arr, int start, int end )
 {
